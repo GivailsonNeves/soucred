@@ -14,7 +14,7 @@ export interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({ initAll }) => {
-  const [fullLoading, setFullLoading] = useState<boolean>(false);
+  const [fullLoading, setFullLoading] = useState<boolean>(true);
   const [t] = useTranslation();
 
   useEffect(() => {
@@ -59,4 +59,5 @@ const mapDispatch = (dispatch: Dispatch) => ({
     ]),
 });
 
-export default connect(null, mapDispatch)(App);
+// export default connect(null, mapDispatch)(App);
+export default App;

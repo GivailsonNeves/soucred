@@ -16,14 +16,18 @@ import {
 import "./styles.scss";
 
 export interface ContactProps {
-  sendSubscribe: any;
-  contactData: any;
+  sendSubscribe?: any;
+  contactData?: any;
 }
 
 const Contact: React.FC<ContactProps> = ({ sendSubscribe, contactData }) => {
   const [t, i18n] = useTranslation();
-  const { title, text } = contactData.content[i18n.language];
-  const { phones } = contactData;
+  // const { title, text } = contactData.content[i18n.language];
+  // const { phones } = contactData;
+  const title = "Cotato";
+  const text =
+    "alsdfjl kwejkl awjekl lakewoiu aklj eklkla hklejpioquua hlkajsdklj lkj ewijasalkajkl j";
+  const phones: any[] = [];
   const [formSentError, setFormSentError] = useState<boolean>(false);
   const [feedbackMessage, setFeedbackMessage] = useState<string>("");
   const initialValues: any = {

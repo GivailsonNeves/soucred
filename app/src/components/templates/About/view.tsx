@@ -6,12 +6,15 @@ import "./styles.scss";
 import Background from "../../../assets/images/background.png";
 
 export interface AboutProps {
-  aboutData: any;
+  aboutData?: any;
 }
 
 const About: React.FC<AboutProps> = ({ aboutData }) => {
   const [t, i18n] = useTranslation();
-  const { title, text } = aboutData.content[i18n.language];
+  // const { title, text } = aboutData.content[i18n.language];
+  const title = "About";
+  const text =
+    "askdlfjkl lwkjal kjekla lkja lks;dj llkaj eklj alkejlk ajkej lwkjlka lkasdjfakl j";
   return (
     <section id="About" className="About">
       <div className="background">

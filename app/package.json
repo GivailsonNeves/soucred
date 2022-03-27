@@ -2,7 +2,7 @@
   "name": "conecta-sebrae",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/wp-content/themes/dalazen/",
+  "homepage": "/wp-content/themes/soucred/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
