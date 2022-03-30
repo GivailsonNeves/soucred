@@ -1,6 +1,7 @@
 {
     "general": {
         "loading": "Loading...",
+        "appName": "SouCred",
         "bookCall": "Book a free call"
     },
     "acting": {
