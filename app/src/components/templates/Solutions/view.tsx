@@ -31,7 +31,6 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
           <div className="card-container">
             <InfoCard
               title="Saque-aniversário FGTS"
-              miniTitle=""
               middle="Quer antecipar seu saque-aniversário do FGTS? Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
             >
             </InfoCard>
@@ -44,7 +43,6 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
 
             <InfoCard
               title="Crédito pessoal"
-              miniTitle=""
               middle="Seja para investir, pagar dívidas, ou para viajar, nós estamos com você nessa jornada. Faça uma simulação do valor e aproveite as vantagens:"
               secondMiddle="√ Pague em até 80x no boleto. √ Sem valor mínimo das parcelas. √ 30 dias para começar a pagar. √ Melhores taxas do mercado. √ Dinheiro na conta em até 48h."
             >
