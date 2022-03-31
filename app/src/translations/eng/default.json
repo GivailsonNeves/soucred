@@ -23,5 +23,11 @@
         "validation": {
             "required": "Campo obritatório"
         }
+    },
+    "simulator": {
+        "tax-text": "Taxa a partir de {tax-value}%/mês",
+        "how-much-you-need": "De quanto você precisa?",
+        "what-is-your-value": "Qual o seu saldo?"
+
     }
 }
