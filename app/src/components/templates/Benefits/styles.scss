@@ -1,0 +1,36 @@
+.benefits {
+  margin: 0 267px;
+  margin-top: -30px;
+  width: 1386px;
+  height: 398px;
+  background-color: #03ea6d;
+  box-shadow: 10px -20px 40px #00000034;
+  border-radius: 22px;
+  p:first-child {
+    color: #283950;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding: 39px 0 0;
+  }
+  .container-objects {
+    display: flex;
+    margin: 51px 0;
+    .object {
+      text-align: center;
+      img {
+        width: 136px;
+      }
+      .title {
+        font-weight: bold;
+        margin: 33px 0 0;
+        font-size: 22px;
+      }
+      p {
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
+      }
+    }
+  }
+}
