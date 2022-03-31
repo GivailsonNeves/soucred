@@ -1,0 +1,25 @@
+.simulator {
+    margin-top: 114px;
+    display: flex;
+    div:first-child {
+        width: 570px;
+    }
+
+    .cardSimulator {
+        width: 818px;
+        height: 452px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 10px 10px 40px #00000019;
+        border: 1px solid #03ea6d;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: 600px) {
+        display: block;
+        flex-direction: column;
+    }
+}

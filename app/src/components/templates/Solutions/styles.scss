@@ -1,30 +1,13 @@
 .solutions {
+  width: 1453px;
   margin: 0 267px 0 364px;
   margin-top: 123px;
-  p:first-child {
-    color: #03ea6d;
-    font-size: 28px;
-    font-weight: bold;
-    width: 340px;
-  }
-  .quite {
-    font-size: 44px;
-    font-style: italic;
-    font-weight: bold;
-    width: 400px;
-  }
-  .end {
-    font-size: 28px;
-    font-weight: bold;
-    width: 340px;
-  }
   img {
     margin-left: -335px;
     width: 1039px;
     height: 1190px;
   }
-
 }
-.card-container{
+.card-container {
   display: flex;
 }

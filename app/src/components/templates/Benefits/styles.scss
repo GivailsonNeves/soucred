@@ -33,4 +33,11 @@
       }
     }
   }
+  @media screen and (max-width: 600px) {
+    height: 1200px;
+    .container-objects {
+      display: block;
+      flex-direction: column;
+    }
+  }
 }

@@ -5,13 +5,14 @@ import Benefits from "../../components/templates/Benefits";
 import Contact from "../../components/templates/Contact";
 import Footer from "../../components/templates/Footer";
 import Header from "../../components/templates/Header";
+import HowWorks from "../../components/templates/HowWorks";
 import Introduction from "../../components/templates/Introduction";
 import Simulators from "../../components/templates/Simulators";
 import Solutions from "../../components/templates/Solutions";
 
 import "./styles.scss";
 
-export interface HomeViewProps {}
+export interface HomeViewProps { }
 
 const HomeView: React.FC<HomeViewProps> = () => {
   const [t] = useTranslation();
@@ -22,6 +23,7 @@ const HomeView: React.FC<HomeViewProps> = () => {
       <Introduction />
       <Benefits />
       <Solutions />
+      <HowWorks />
       <Simulators />
       <Footer />
     </>
