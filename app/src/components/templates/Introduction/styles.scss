@@ -1,59 +1,64 @@
 .introduction {
-  width: 1780px;
-
   background-color: #283950;
-  height: 730px;
-  display: flex;
-  div:first-child {
-    margin: 0 267px 0 364px;
-    
-    margin-top: 105px;
-    p:first-child {
-      color: #03ea6d;
-      font-size: 32px;
-      font-weight: bold;
-    }
-    div {
-      display: flex;
-      .title {
-        width: 750px;
-
-        color: #ffffff;
-        font-size: 74px;
-        font-weight: bold;
-      }
-      img {
-        margin: 40px 0 0;
-
-        height: 38px;
+  color: white;
+  .container {
+    position: relative;
+    .garota-propaganda {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        max-width: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
     }
-    p {
-      width: 571px;
-
-      font-size: 22px;
-      color: #ffffff;
-    }
-    button {
-      margin-top: 63px;
-      height: 56px;
-      width: 396px;
-      border-radius: 28px;
-      font-size: 1.1em;
-      line-height: 0.5em;
-      background-color: #03ea6d;
-      color: #283950;
-      font-weight: bold;
-      border: 0px;
-    }
   }
-  div {
-    img {
-      margin-left: -300px;
-      margin-top: 100px;
+  // div:first-child {
+  //   margin: 0 267px 0 364px;
+  //   margin-top: 105px;
+  //   p:first-child {
+  //     color: #03ea6d;
+  //     font-size: 32px;
+  //     font-weight: bold;
+  //   }
+  //   div {
+  //     display: flex;
+  //     .title {
+  //       width: 750px;
 
-      height: 624px;
-      margin-top: 10px;
-    }
-  }
+  //       color: #ffffff;
+  //       font-size: 74px;
+  //       font-weight: bold;
+  //     }
+  //     img {
+  //       margin: 40px 0 0;
+
+  //       height: 38px;
+  //     }
+  //   }
+  //   p {
+  //     width: 571px;
+
+  //     font-size: 22px;
+  //     color: #ffffff;
+  //   }
+  //   button {
+  //     margin-top: 63px;
+  //     height: 56px;
+  //     border-radius: 28px;
+  //     font-size: 1.1em;
+  //     line-height: 0.5em;
+  //     background-color: #03ea6d;
+  //     color: #283950;
+  //     font-weight: bold;
+  //     border: 0px;
+  //   }
+  // }
+  // div {
+  //   img {
+  //     margin-left: -300px;
+  //     margin-top: 100px;
+  //     margin-top: 10px;
+  //   }
+  // }
 }

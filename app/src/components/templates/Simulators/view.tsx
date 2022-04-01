@@ -14,10 +14,10 @@ const Simulators: React.FC = () => {
         <div>
           <Titles
             greenText="Simulador"
-            greenTitleStyle={{ "width": "200px" }}
+            greenTitleStyle={{ width: "200px" }}
             blackText="Saque-aniversário do FGTS"
             subTitleText="Que tal ter dinheiro agora sem comprometer sua renda mensal? Antecipe até 7 anos do seu saque-aniversário."
-            subTitleStyle={{ "width": "424px" }}
+            subTitleStyle={{ width: "424px" }}
           />
         </div>
         <div className="cardSimulator">
@@ -26,16 +26,17 @@ const Simulators: React.FC = () => {
             taxValue={1.59}
           />
           <GreenButton
-            title="AVANÇAR"
             style={{
-              "display": "flex",
-              "align-items": "center",
-              "margin": "auto",
+              display: "flex",
+              alignItems: "center",
+              margin: "auto",
               "flex-direction": "column",
               "justify-content": "space-evenly",
             }}
-            onClick={() => console.log('vai porco')}
-          />
+            onClick={() => console.log("vai porco")}
+          >
+            AVANÇAR
+          </GreenButton>
         </div>
       </div>
 
@@ -43,9 +44,9 @@ const Simulators: React.FC = () => {
         <div>
           <Titles
             blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
-            blackTitleStyle={{ "width": "370px" }}
+            blackTitleStyle={{ width: "370px" }}
             subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
-            subTitleStyle={{ "width": "370px" }}
+            subTitleStyle={{ width: "370px" }}
           />
         </div>
         <div className="cardSimulator">
@@ -54,20 +55,19 @@ const Simulators: React.FC = () => {
             taxValue={1.59}
           />
           <GreenButton
-            title="AVANÇAR"
             style={{
-              "display": "flex",
+              display: "flex",
               "align-items": "center",
-              "margin": "auto",
+              margin: "auto",
               "flex-direction": "column",
               "justify-content": "space-evenly",
             }}
-            onClick={() => console.log('vai porco')}
-          />
+            onClick={() => console.log("vai porco")}
+          >
+            AVANÇAR
+          </GreenButton>
         </div>
       </div>
-
-
 
       <section className="simulators" id="simulators">
         <Container>
@@ -81,7 +81,6 @@ const Simulators: React.FC = () => {
           />
         </Container>
       </section>
-
     </Container>
   );
 };

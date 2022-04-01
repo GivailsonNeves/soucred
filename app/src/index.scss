@@ -5,6 +5,10 @@
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+
+  @media screen and(min-width: 800px) {
+    font-size: 22px;
+  }
   strong,
   b {
     color: #ba8b4a;
@@ -47,8 +51,8 @@ body {
     font-size: 2em;
   }
   h4 {
-    font-size: 1.375em;
-    color: #8d9a8d;
+    font-size: 1.272em;
+    color: green;
   }
 }
 .btn {
@@ -71,14 +75,6 @@ body {
 .text-right {
   text-align: right;
 }
-
-section {
-  @media screen and (min-width: 679px) {
-    margin-bottom: 80px;
-    min-height: 90vh;
-  }
-}
-
 .wp-block {
   &-media-text {
     & > figure {

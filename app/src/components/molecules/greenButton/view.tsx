@@ -3,25 +3,26 @@ import { Button, Container, Modal } from "react-bootstrap";
 import "./styles.scss";
 
 export interface GreenButtonProps {
-    title?: string;
-    style?: object;
-    onClick?: any;
+  style?: object;
+  onClick?: any;
+  children: React.ReactNode;
+  bold?: boolean;
 }
 
 const GreenButton: React.FC<GreenButtonProps> = ({
-    title,
-    style,
-    onClick
+  style,
+  onClick,
+  children,
+  bold,
 }) => {
-    return (
-        <Container className="green-button">
-            <Button style={style}
-                onClick={onClick}
-            >
-                {title ? title : "CHAMA NO ZAP"}
-            </Button>
-        </Container>
-    );
-}
+  const classes = ["green-button"];
+  if (bold) classes.push("bold");
+
+  return (
+    <Button className={classes.join(" ")} style={style} onClick={onClick}>
+      {children}
+    </Button>
+  );
+};
 
 export default GreenButton;

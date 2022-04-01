@@ -25,11 +25,8 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
         <Titles
           greenText="Como funciona?"
           blackText="O processo é dividido em etapas, começando pela análise dos seus documentos:"
-          blackTitleStyle={{ "width": "800px" }}
+          blackTitleStyle={{ width: "800px" }}
         />
-
-
-
 
         <div className="documents">
           <p>Saque-aniversário FGTS:</p>
@@ -68,21 +65,27 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
           </div>
         </div>
 
-
-
-
         <div className="firsInfo">
-          <p>Entre a validação dos documentos e a aprovação da proposta, o dinheiro cai na sua conta em até 48h.</p>
+          <p>
+            Entre a validação dos documentos e a aprovação da proposta, o
+            dinheiro cai na sua conta em até 48h.
+          </p>
           <p> Quer ver como é fácil e rápido?</p>
         </div>
 
         <GreenButton
-          style={{ "margin": "20px 0 0 0" }}
-          onClick={() => console.log('vai porco')}
-        />
+          style={{ margin: "20px 0 0 0" }}
+          onClick={() => console.log("vai porco")}
+          bold
+        >
+          xxxx
+        </GreenButton>
 
         <div className="info">
-          <p>Fique atento aos golpes: a Soucred não solicita nenhum tipo de depósito antecipado para liberar o seu crédito.</p>
+          <p>
+            Fique atento aos golpes: a Soucred não solicita nenhum tipo de
+            depósito antecipado para liberar o seu crédito.
+          </p>
         </div>
       </div>
     </Container>
