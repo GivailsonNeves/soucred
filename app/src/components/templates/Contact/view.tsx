@@ -22,8 +22,6 @@ export interface ContactProps {
 
 const Contact: React.FC<ContactProps> = ({ sendSubscribe, contactData }) => {
   const [t, i18n] = useTranslation();
-  // const { title, text } = contactData.content[i18n.language];
-  // const { phones } = contactData;
   const title = "Cotato";
   const text =
     "alsdfjl kwejkl awjekl lakewoiu aklj eklkla hklejpioquua hlkajsdklj lkj ewijasalkajkl j";
@@ -55,14 +53,6 @@ const Contact: React.FC<ContactProps> = ({ sendSubscribe, contactData }) => {
     formikHelpers: FormikHelpers<any>
   ) => {
     setFormSentError(false);
-    console.log(values);
-    // const res = await sendSubscribe(values);
-    // if (res) {
-    //   formikHelpers.resetForm();
-    //   setFeedbackMessage(t("contact.sendSucess"));
-    // } else {
-    //   setFormSentError(true);
-    // }
   };
 
   return (
@@ -193,7 +183,6 @@ const Contact: React.FC<ContactProps> = ({ sendSubscribe, contactData }) => {
                       </div>
                     </Col>
                   </Row>
-
                   {formSentError && (
                     <div className="text-center">
                       <small>{t("contact.sentError")}</small>

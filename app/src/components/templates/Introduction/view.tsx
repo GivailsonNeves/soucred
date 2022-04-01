@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
 
 import "./styles.scss";
 
@@ -21,7 +19,7 @@ function Introduction({ showNavigation = true }: IntroductionProps) {
       <Container>
         <Row>
           <Col sm={12} md={6}>
-            <h4>Na SouCred é assim:</h4>
+            <h3>Na SouCred é assim:</h3>
             <h1>
               mensagem no Zap, dinheiro na conta.
               <img src={cheks} alt={t("general.appName")} />

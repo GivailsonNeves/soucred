@@ -7,7 +7,7 @@ body {
   font-family: "Montserrat", sans-serif;
 
   @media screen and(min-width: 800px) {
-    font-size: 22px;
+    // font-size: 16px;
   }
   strong,
   b {
@@ -23,36 +23,19 @@ body {
   }
 
   h1 {
-    font-size: 4.37em;
+    font-size: 3.5em;
   }
   h2 {
-    font-size: 2.2em;
-    color: #a58d69;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-bottom: 40px;
-    &.lined {
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-      &::after {
-        position: absolute;
-        width: 500px;
-        right: 0;
-        bottom: 20px;
-        height: 1px;
-        content: "";
-        display: block;
-        background-color: #a58d69;
-      }
-    }
+    font-size: 2.75em;
   }
   h3 {
     font-size: 2em;
   }
   h4 {
-    font-size: 1.272em;
-    color: green;
+    font-size: 1.75em;
+  }
+  h5 {
+    font-size: 1.375em;
   }
 }
 .btn {

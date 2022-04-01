@@ -19,9 +19,9 @@ function Benefits({ showNavigation = true }: BenefitsProps) {
   const [t] = useTranslation();
 
   return (
-    <Container>
-      <div className="benefits">
-        <p>Só vi vantagens</p>
+    <section className="benefits" id="benefits">
+      <Container>
+        <h2>Só vi vantagens</h2>
         <div className="container-objects">
           <div className="object">
             <img src={fast} alt={t("general.appName")} />
@@ -49,8 +49,8 @@ function Benefits({ showNavigation = true }: BenefitsProps) {
             <p> Sem valor mínimo das parcelas</p>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 }
 

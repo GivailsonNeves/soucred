@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
 
 import "./styles.scss";
 
@@ -15,19 +13,23 @@ function Header({ showNavigation = true }: HeaderProps) {
   const [t] = useTranslation();
 
   return (
-    <Container>
-      <div className="header">
-        <div className="links">
+    <section className="header" id="header">
+      <Container>
+        <Row>
+          <Col xs={12} md={5} lg={5}>
             <img src={logo} alt={t("general.appName")} />
-          <div>
-            <a href="#">Soluções</a>
-            <a href="#">Como funciona</a>
-            <a href="#">Simulador</a>
-            <a href="#">Ajuda</a>
-          </div>
-        </div>
-      </div>
-    </Container>
+          </Col>
+          <Col xs={12} md={7} lg={7}>
+            <div className="links">
+              <a href="#">Soluções</a>
+              <a href="#">Como funciona</a>
+              <a href="#">Simulador</a>
+              <a href="#">Ajuda</a>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 

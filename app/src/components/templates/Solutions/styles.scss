@@ -1,13 +1,20 @@
-.solutions {
-  width: 1453px;
-  margin: 0 267px 0 364px;
-  margin-top: 123px;
-  img {
-    margin-left: -335px;
-    width: 1039px;
-    height: 1190px;
+.solution-section {
+  margin-top: 100px;
+  .container {
+    img {
+      margin-left: -685px;
+      width: 1039px;
+      height: 1190px;
+    }
+    div {
+      p {
+        font-size: 1.125em;
+        padding-left: 30px;
+        width: 350px;
+      }
+      .last-paragraph {
+        margin-top: -20px;
+      }
+    }
   }
-}
-.card-container {
-  display: flex;
 }

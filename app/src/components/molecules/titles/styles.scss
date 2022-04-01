@@ -1,16 +1,16 @@
-.titles {
-    p:first-child {
+.titles-componte {
+    padding: 0;
+    h4 {
         color: #03ea6d;
-        font-size: 28px;
         font-weight: bold;
     }
-    .quite {
-        font-size: 44px;
+    h2 {
         font-style: italic;
         font-weight: bold;
     }
-    .end {
-        font-size: 28px;
+    h4.end {
+        color: #283950;
         font-weight: bold;
+        width: 290px;
     }
 }

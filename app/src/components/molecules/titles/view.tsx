@@ -21,13 +21,11 @@ const Titles: React.FC<TitlesProps> = ({
 }) => {
     return (
         <>
-            <Container className="titles">
-                <div>
-                    <p style={greenTitleStyle}>{greenText}</p>
-                    <p className="quite" style={blackTitleStyle}>{blackText}</p>
-                    <p className="end" style={subTitleStyle}>{subTitleText}</p>
-                </div>
-            </Container>
+            <div className="titles-componte">
+                    <h4 style={greenTitleStyle}>{greenText}</h4>
+                    <h2 style={blackTitleStyle}>{blackText}</h2>
+                    <h4 className="end" style={subTitleStyle}>{subTitleText}</h4>
+            </div>
         </>
     );
 }

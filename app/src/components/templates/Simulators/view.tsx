@@ -9,8 +9,10 @@ import "./styles.scss";
 const Simulators: React.FC = () => {
   const [t] = useTranslation();
   return (
-    <Container>
-      <div className="simulator">
+    <section className="simulator" id="simulator">
+      <Container>
+
+
         <div>
           <Titles
             greenText="Simulador"
@@ -38,50 +40,50 @@ const Simulators: React.FC = () => {
             AVANÇAR
           </GreenButton>
         </div>
-      </div>
 
-      <div className="simulator">
-        <div>
-          <Titles
-            blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
-            blackTitleStyle={{ width: "370px" }}
-            subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
-            subTitleStyle={{ width: "370px" }}
-          />
+        <div className="simulator">
+          <div>
+            <Titles
+              blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
+              blackTitleStyle={{ width: "370px" }}
+              subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
+              subTitleStyle={{ width: "370px" }}
+            />
+          </div>
+          <div className="cardSimulator">
+            <SimulatorPanel
+              title={t("simulator.what-is-your-value")}
+              taxValue={1.59}
+            />
+            <GreenButton
+              style={{
+                display: "flex",
+                "align-items": "center",
+                margin: "auto",
+                "flex-direction": "column",
+                "justify-content": "space-evenly",
+              }}
+              onClick={() => console.log("vai porco")}
+            >
+              AVANÇAR
+            </GreenButton>
+          </div>
         </div>
-        <div className="cardSimulator">
-          <SimulatorPanel
-            title={t("simulator.what-is-your-value")}
-            taxValue={1.59}
-          />
-          <GreenButton
-            style={{
-              display: "flex",
-              "align-items": "center",
-              margin: "auto",
-              "flex-direction": "column",
-              "justify-content": "space-evenly",
-            }}
-            onClick={() => console.log("vai porco")}
-          >
-            AVANÇAR
-          </GreenButton>
-        </div>
-      </div>
 
-      <section className="simulators" id="simulators">
-        <Container>
-          <SimulatorPanel
-            title={t("simulator.what-is-your-value")}
-            taxValue={1.59}
-          />
-          <SimulatorPanel
-            title={t("simulator.how-much-you-need")}
-            taxValue={1.99}
-          />
-        </Container>
-      </section>
-    </Container>
+        <section className="simulators" id="simulators">
+          <Container>
+            <SimulatorPanel
+              title={t("simulator.what-is-your-value")}
+              taxValue={1.59}
+            />
+            <SimulatorPanel
+              title={t("simulator.how-much-you-need")}
+              taxValue={1.99}
+            />
+          </Container>
+        </section>
+      </Container>
+    </section>
   );
 };
 
