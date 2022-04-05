@@ -32,7 +32,7 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
             />
           </Col>
           <Col xs={6} md={8}>
-            <Row>
+            <Row xs={1} md={6} lg={12}>
               <Col xs={6} md={6}>
                 <InfoCard
                   title="Saque-aniversário FGTS"

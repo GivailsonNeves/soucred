@@ -1,11 +1,9 @@
 .simulator {
     margin-top: 114px;
     display: flex;
-    div:first-child {
-        width: 570px;
-    }
+
     .cardSimulator {
-        width: 818px;
+        max-width: 818px;
         height: 452px;
         background: #ffffff 0% 0% no-repeat padding-box;
         box-shadow: 10px 10px 40px #00000019;
@@ -16,6 +14,75 @@
         margin: auto;
         flex-direction: column;
         justify-content: space-evenly;
+
+        .buttons {
+            margin-top: 40px;
+            button {
+                width: 255px;
+                background-color: #03ea6d;
+                border: 1px solid #03ea6d;
+                border: 0 {
+                    top-left-radius: 28px;
+                    bottom-left-radius: 28px;
+                }
+                color: black;
+                font-weight: bold;
+            }
+            & > :focus {
+                background-color: white;
+                border: 1px solid #03ea6d;
+            }
+
+            & > :last-child {
+                border: 0 {
+                    top-right-radius: 28px;
+                    bottom-right-radius: 28px;
+                }
+            }
+        }
+        .sub-title {
+            text-align: end;
+            margin-left: -210px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+    .col {
+        .sign-up {
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            min-width: 756px;
+            height: 116px;
+            background: #283950 0% 0% no-repeat padding-box;
+            border-radius: 16px;
+            div:first-child {
+                display: flex;
+            }
+            p:first-child {
+                color: white;
+                font-size: 1.2727em;
+                margin: auto;
+            }
+            .last-p {
+                color: #03ea6d;
+                font-weight: bold;
+                font-size: 1.727em;
+                margin: auto 0 auto 20px;
+            }
+            .green-button {
+                width: 308px;
+                margin-left: 40px;
+            }
+        }
+        .green-button {
+            width: 242px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
     }
     @media screen and (max-width: 600px) {
         display: block;

@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import GreenButton from "../../molecules/greenButton/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 import Titles from "../../molecules/titles/view";
@@ -13,64 +13,67 @@ const Simulators: React.FC = () => {
       <Container>
 
 
-        <div>
-          <Titles
-            greenText="Simulador"
-            greenTitleStyle={{ width: "200px" }}
-            blackText="Saque-aniversário do FGTS"
-            subTitleText="Que tal ter dinheiro agora sem comprometer sua renda mensal? Antecipe até 7 anos do seu saque-aniversário."
-            subTitleStyle={{ width: "424px" }}
-          />
-        </div>
-        <div className="cardSimulator">
-          <SimulatorPanel
-            title={t("simulator.what-is-your-value")}
-            taxValue={1.59}
-          />
-          <GreenButton
-            style={{
-              display: "flex",
-              alignItems: "center",
-              margin: "auto",
-              "flex-direction": "column",
-              "justify-content": "space-evenly",
-            }}
-            onClick={() => console.log("vai porco")}
-          >
-            AVANÇAR
-          </GreenButton>
-        </div>
+        <Row>
+          <Col xs={12} md={6} lg={3}>
+            <Titles
+              greenText="Simulador"
+              greenTitleStyle={{ width: "200px" }}
+              blackText="Saque-aniversário do FGTS"
+              subTitleText="Que tal ter dinheiro agora sem comprometer sua renda mensal? Antecipe até 7 anos do seu saque-aniversário."
+              subTitleStyle={{ width: "424px" }}
+            />
+          </Col>
+          <Col className="cardSimulator">
+            <SimulatorPanel
+              title={t("simulator.what-is-your-value")}
+              taxValue={1.59}
+            />
+            <GreenButton
 
-        <div className="simulator">
-          <div>
+              onClick={() => console.log("vai porco")}
+            >
+              AVANÇAR
+            </GreenButton>
+          </Col>
+          <p className="sub-title">*Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa aqui.</p>
+        </Row>
+
+
+        <Row className="">
+          <Col xs={12} md={6} lg={3}>
+
             <Titles
               blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
               blackTitleStyle={{ width: "370px" }}
               subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
               subTitleStyle={{ width: "370px" }}
             />
-          </div>
-          <div className="cardSimulator">
+          </Col>
+
+          <Col className="cardSimulator">
+            <div className="buttons">
+              <Button>PESSOAL</Button>
+              <Button>CONSIGNADO</Button>
+            </div>
             <SimulatorPanel
-              title={t("simulator.what-is-your-value")}
+              title={t("De quanto você precisa?")}
               taxValue={1.59}
             />
-            <GreenButton
-              style={{
-                display: "flex",
-                "align-items": "center",
-                margin: "auto",
-                "flex-direction": "column",
-                "justify-content": "space-evenly",
-              }}
-              onClick={() => console.log("vai porco")}
-            >
-              AVANÇAR
-            </GreenButton>
-          </div>
-        </div>
+            <div className="sign-up">
+              <div>
+                <p>80 parcelas de</p>
+                <p className="last-p">R$ 0,00</p>
+                <GreenButton children="FAZER MEU CADASTRO"></GreenButton>
+              </div>
+            </div>
+          </Col>
+          <p className="sub-title">Essas parcelas podem ser ainda melhores.</p>
+          <p className="sub-title"> Envie seus documentos e faça sua simulação personalizada.</p>
 
-        <section className="simulators" id="simulators">
+        </Row>
+
+
+        {/* <section className="simulators" id="simulators">
           <Container>
             <SimulatorPanel
               title={t("simulator.what-is-your-value")}
@@ -81,7 +84,7 @@ const Simulators: React.FC = () => {
               taxValue={1.99}
             />
           </Container>
-        </section>
+        </section> */}
       </Container>
     </section>
   );

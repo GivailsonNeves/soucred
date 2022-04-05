@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import GreenButton from "../../molecules/greenButton/view";
 
@@ -22,42 +22,50 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
         <Titles
           greenText="Como funciona?"
           blackText="O processo é dividido em etapas, começando pela análise dos seus documentos:"
-          blackTitleStyle={{ width: "800px" }}
+          blackTitleStyle={{ width: "750px" }}
         />
         <div className="documents">
           <p>Saque-aniversário FGTS:</p>
-          <div className="images">
-            <div className="object">
+
+
+          <Row xs={1} md={1} lg={1}>
+            <Col>
               <img src={identity} alt={t("general.appName")} />
               <h5>Documento de identificação pessoal.</h5>
-            </div>
-            <div className="object">
+            </Col>
+            <Col>
               <img src={chek} alt={t("general.appName")} />
               <h5>Aceite no aplicativo da Caixa.</h5>
-            </div>
-            <div className="object">
+            </Col>
+            <Col>
               <img src={time} alt={t("general.appName")} />
               <h5>Em menos de uma hora receba o pix na sua conta.</h5>
-            </div>
-          </div>
+            </Col>
+          </Row>
+
+
         </div>
         <p></p>
         <div className="documents">
           <p>Crédito pessoal e consignado:</p>
-          <div className="images">
-            <div className="object">
+
+
+          <Row xs={1} md={2} lg={12}>
+            <Col>
               <img src={identity} alt={t("general.appName")} />
               <h5>Comprovante de renda.</h5>
-            </div>
-            <div className="object">
+            </Col>
+            <Col>
               <img src={chek} alt={t("general.appName")} />
               <h5>Comprovante de residência.</h5>
-            </div>
-            <div className="object">
+            </Col>
+            <Col>
               <img src={time} alt={t("general.appName")} />
               <h5>Documento de identificação pessoal.</h5>
-            </div>
-          </div>
+            </Col>
+          </Row>
+
+
         </div>
         <div className="firsInfo">
           <h4>

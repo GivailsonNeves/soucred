@@ -16,10 +16,10 @@ function Header({ showNavigation = true }: HeaderProps) {
     <section className="header" id="header">
       <Container>
         <Row>
-          <Col xs={12} md={5} lg={5}>
+          <Col xs={12} md={3} lg={3}>
             <img src={logo} alt={t("general.appName")} />
           </Col>
-          <Col xs={12} md={7} lg={7}>
+          <Col xs={12} md={9} lg={9}>
             <div className="links">
               <a href="#">Soluções</a>
               <a href="#">Como funciona</a>

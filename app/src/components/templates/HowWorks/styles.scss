@@ -16,12 +16,12 @@
         font-size: 2.375em;
         font-weight: bold;
       }
-      .images {
+      .row {
         display: flex;
-        width: 800px;
+        max-width: 800px;
         justify-content: space-between;
       }
-      .object {
+      .col {
         width: 177px;
         text-align: center;
         img {

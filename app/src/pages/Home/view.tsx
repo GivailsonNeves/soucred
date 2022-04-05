@@ -1,8 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import About from "../../components/templates/About";
 import Benefits from "../../components/templates/Benefits";
-import Contact from "../../components/templates/Contact";
 import Footer from "../../components/templates/Footer";
 import Header from "../../components/templates/Header";
 import HowWorks from "../../components/templates/HowWorks";
