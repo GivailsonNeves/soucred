@@ -23,7 +23,7 @@ const HomeView: React.FC<HomeViewProps> = () => {
       <Solutions />
       <HowWorks />
       <Simulators />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

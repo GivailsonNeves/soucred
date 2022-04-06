@@ -23,56 +23,55 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
     <section className="solution-section" id="solution-section">
       <Container>
         <Row>
-          <Col xs={6} md={4} >
+          <Col xs={12} md={4}>
             <Titles
               greenText="Soluções"
               blackText="Precisa de dinheiro rápido?"
-              blackTitleStyle={{ "width": "400px" }}
               subTitleText="Temos as melhores soluções pra você!"
             />
           </Col>
-          <Col xs={6} md={8}>
-            <Row xs={1} md={6} lg={12}>
-              <Col xs={6} md={6}>
+
+
+          <Col xs={12} md={8}>
+            <Row>
+              <Col xs={12} md={6} >
                 <InfoCard
                   title="Saque-aniversário FGTS"
                   middle="Quer antecipar seu saque-aniversário do FGTS? Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
                 >
                 </InfoCard>
+                <p >*Nosso processo mais rápido levou apenas 16 minutos.</p>
+                <p className="last-paragraph">*Aceitamos negativados.</p>
               </Col>
-              <Col xs={6} md={6} >
+              <Col xs={12} md={6} >
                 <InfoCard
                   title="Crédito consignado "
                   miniTitle="(aposentados e pensionistas)"
                   middle="Crédito rápido e superseguro para ambos os lados, descontando a prestação diretamente de seu salário/INSS."
                 >
                 </InfoCard>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <p >*Nosso processo mais rápido levou apenas 16 minutos.</p>
-                <p className="last-paragraph">*Aceitamos negativados.</p>
-              </Col>
-              <Col>
                 <p>*Aceitamos negativados.</p>
               </Col>
             </Row>
           </Col>
-          <Col xs={6} md={4} >
-            <img src={celPhone} alt={t("general.appName")} />
-          </Col>
-          <Col xs={6} md={8}>
-            <Row>
-              <Col xs={6} md={6}>
+
+
+          {/* <Col xs={12} md={{ span: 8, offset: 4 }} > */}
+          <Col xs={12} md={{ span: 12}} >
+            <Row >
+              <Col xs={6} md={4} >
+                <img src={celPhone} alt={t("general.appName")} />
+              </Col>
+              <Col xs={12} md={4}>
                 <InfoCard
                   title="Crédito pessoal"
                   middle="Seja para investir, pagar dívidas, ou para viajar, nós estamos com você nessa jornada. Faça uma simulação do valor e aproveite as vantagens:"
                   data={myArray}
                 >
                 </InfoCard>
+                <p />
               </Col>
-              <Col xs={6} md={6} >
+              <Col xs={12} md={4} >
                 <InfoCard
                   title="Financiamentos "
                   miniTitle="(imóveis e veículos)"
@@ -83,6 +82,7 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
             </Row>
           </Col>
         </Row>
+
       </Container >
     </section>
   );

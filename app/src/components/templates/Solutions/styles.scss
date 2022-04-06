@@ -2,15 +2,16 @@
   margin-top: 100px;
   .container {
     img {
-      margin-left: -685px;
+      margin-left: -670px;
       width: 1039px;
-      height: 1190px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     div {
       p {
         font-size: 1.125em;
         padding-left: 30px;
-        width: 350px;
       }
       .last-paragraph {
         margin-top: -20px;

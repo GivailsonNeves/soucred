@@ -3,6 +3,11 @@
     padding: 130px 0 60px 230px;
     background-color: #f8f8f8;
     border-radius: 22px;
+
+    @media screen and (max-width: 768px) {
+      padding: 130px 0 60px 30px;
+    }
+
     div:first-child {
       p:first-child {
         color: #03ea6d;
@@ -20,6 +25,7 @@
         display: flex;
         max-width: 800px;
         justify-content: space-between;
+        text-align: center;
       }
       .col {
         width: 177px;
@@ -28,22 +34,36 @@
           width: 136px;
         }
         h5 {
+          width: 177px;
           text-align: center;
           color: #283950;
           margin-top: 20px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .row {
+          text-align: center;
+        }
+        h5 {
+          text-align: center;
+          width: 177px;
+          margin: 0 auto;
+        }
+        img {
+          width: 136px;
         }
       }
     }
     .firsInfo {
       margin-top: 35px;
       h4 {
-        width: 764px;
+        max-width: 560px;
         color: #283950;
         font-weight: bold;
       }
     }
     .info {
-      width: 710px;
+      max-width: 710px;
       height: 171px;
       background: #ffffff 0% 0% no-repeat padding-box;
       box-shadow: 0px 10px 8px #0000001a;

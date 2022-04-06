@@ -22,22 +22,21 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
         <Titles
           greenText="Como funciona?"
           blackText="O processo é dividido em etapas, começando pela análise dos seus documentos:"
-          blackTitleStyle={{ width: "750px" }}
         />
         <div className="documents">
           <p>Saque-aniversário FGTS:</p>
 
 
-          <Row xs={1} md={1} lg={1}>
-            <Col>
+          <Row  >
+            <Col xs={12} md={3}>
               <img src={identity} alt={t("general.appName")} />
               <h5>Documento de identificação pessoal.</h5>
             </Col>
-            <Col>
+            <Col xs={12} md={3}>
               <img src={chek} alt={t("general.appName")} />
               <h5>Aceite no aplicativo da Caixa.</h5>
             </Col>
-            <Col>
+            <Col xs={12} md={3}>
               <img src={time} alt={t("general.appName")} />
               <h5>Em menos de uma hora receba o pix na sua conta.</h5>
             </Col>
@@ -50,16 +49,16 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
           <p>Crédito pessoal e consignado:</p>
 
 
-          <Row xs={1} md={2} lg={12}>
-            <Col>
+          <Row>
+            <Col xs={12} md={3}>
               <img src={identity} alt={t("general.appName")} />
               <h5>Comprovante de renda.</h5>
             </Col>
-            <Col>
+            <Col xs={12} md={3}>
               <img src={chek} alt={t("general.appName")} />
               <h5>Comprovante de residência.</h5>
             </Col>
-            <Col>
+            <Col xs={12} md={3}>
               <img src={time} alt={t("general.appName")} />
               <h5>Documento de identificação pessoal.</h5>
             </Col>

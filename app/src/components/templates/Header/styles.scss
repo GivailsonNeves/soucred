@@ -14,11 +14,11 @@
         font-weight: bold;
         margin-left: 50px;
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 766px) {
         flex-direction: column;
       }
       @media screen and (max-width: 990px) {
-        a{
+        a {
           font-size: 0.88em;
         }
       }

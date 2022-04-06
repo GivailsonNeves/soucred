@@ -17,10 +17,9 @@ const Simulators: React.FC = () => {
           <Col xs={12} md={6} lg={3}>
             <Titles
               greenText="Simulador"
-              greenTitleStyle={{ width: "200px" }}
               blackText="Saque-aniversário do FGTS"
               subTitleText="Que tal ter dinheiro agora sem comprometer sua renda mensal? Antecipe até 7 anos do seu saque-aniversário."
-              subTitleStyle={{ width: "424px" }}
+              
             />
           </Col>
           <Col className="cardSimulator">
@@ -35,7 +34,9 @@ const Simulators: React.FC = () => {
               AVANÇAR
             </GreenButton>
           </Col>
-          <p className="sub-title">*Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa aqui.</p>
+          <div>
+            <p className="sub-title">*Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa aqui.</p>
+          </div>
         </Row>
 
 
@@ -44,9 +45,7 @@ const Simulators: React.FC = () => {
 
             <Titles
               blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
-              blackTitleStyle={{ width: "370px" }}
               subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
-              subTitleStyle={{ width: "370px" }}
             />
           </Col>
 
@@ -66,9 +65,9 @@ const Simulators: React.FC = () => {
                 <GreenButton children="FAZER MEU CADASTRO"></GreenButton>
               </div>
             </div>
-          </Col>
           <p className="sub-title">Essas parcelas podem ser ainda melhores.</p>
           <p className="sub-title"> Envie seus documentos e faça sua simulação personalizada.</p>
+          </Col>
 
         </Row>
 

@@ -18,7 +18,7 @@ function Introduction({ showNavigation = true }: IntroductionProps) {
     <section className="introduction" id="introduction">
       <Container>
         <Row>
-          <Col sm={12} md={6}>
+          <Col xs={12} md={6} lg={6}>
             <h3>Na SouCred é assim:</h3>
             <h1>
               mensagem no Zap, dinheiro na conta.
@@ -31,7 +31,7 @@ function Introduction({ showNavigation = true }: IntroductionProps) {
               <GreenButton>CONHEÇA NOSSAS SOLUÇÕES.</GreenButton>
             </p>
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={12} md={6} lg={6}>
             <img
               className="garota-propaganda"
               src={logo}
