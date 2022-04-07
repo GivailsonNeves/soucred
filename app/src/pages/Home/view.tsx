@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Benefits from "../../components/templates/Benefits";
+import Doubts from "../../components/templates/Doubts";
 import Footer from "../../components/templates/Footer";
 import Header from "../../components/templates/Header";
 import HowWorks from "../../components/templates/HowWorks";
@@ -23,7 +24,8 @@ const HomeView: React.FC<HomeViewProps> = () => {
       <Solutions />
       <HowWorks />
       <Simulators />
-      {/* <Footer /> */}
+      <Doubts />
+      <Footer />
     </>
   );
 };

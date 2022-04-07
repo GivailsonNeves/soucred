@@ -1,10 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap");
 
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  font-family: "Amaranth", sans-serif;
 
   @media screen and(min-width: 800px) {
     // font-size: 16px;
@@ -23,16 +26,16 @@ body {
   }
 
   h1 {
-    font-size: 3.3636em;
+    font-size: 3.7em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   h3 {
-    font-size: 1.4545em;
+    font-size: 1.3em;
   }
   h4 {
-    font-size: 1.2727em;
+    font-size: 1.4m;
   }
   h5 {
     font-size: 1em;

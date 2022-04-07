@@ -1,11 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import InfoCard from "../../molecules/info-card";
+import Titles from "../../molecules/titles/view";
 
 import "./styles.scss";
 
-import celPhone from "../,,/../../../assets/images/img_3.png";
-import Titles from "../../molecules/titles/view";
+import celPhone from "../,,/../../../assets/images/mockup_mao.png";
 
 interface SolutionsProps {
   showNavigation?: boolean;
@@ -30,14 +30,13 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
               subTitleText="Temos as melhores soluções pra você!"
             />
           </Col>
-
-
           <Col xs={12} md={8}>
             <Row>
               <Col xs={12} md={6} >
                 <InfoCard
                   title="Saque-aniversário FGTS"
-                  middle="Quer antecipar seu saque-aniversário do FGTS? Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
+                  middle="Quer antecipar seu saque-aniversário do FGTS?"
+                  secondMiddle="Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
                 >
                 </InfoCard>
                 <p >*Nosso processo mais rápido levou apenas 16 minutos.</p>
@@ -54,9 +53,6 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
               </Col>
             </Row>
           </Col>
-
-
-          {/* <Col xs={12} md={{ span: 8, offset: 4 }} > */}
           <Col xs={12} md={{ span: 12}} >
             <Row >
               <Col xs={6} md={4} >
@@ -82,7 +78,6 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
             </Row>
           </Col>
         </Row>
-
       </Container >
     </section>
   );

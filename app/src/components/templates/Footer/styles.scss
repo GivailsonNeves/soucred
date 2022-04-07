@@ -1,5 +1,8 @@
 footer {
+  margin-top: 190px;
   margin-bottom: 60px;
+  font-family: "Montserrat";
+  font-size: .8em;
   .call {
     padding: 60px 0;
     border-top: 1px #ccc solid;
@@ -8,9 +11,9 @@ footer {
     p {
       margin: 0;
       padding: 0;
-      &:not(:last-child) {
-        margin-bottom: 80px;
-      }
+      // &:not(:last-child) {
+      //   margin-bottom: 80px;
+      // }
     }
   }
   .links {
@@ -35,7 +38,6 @@ footer {
         width: 2px;
         margin: 0 10px;
       }
-
       @media screen and (max-width: 600px) {
         flex-direction: column;
       }

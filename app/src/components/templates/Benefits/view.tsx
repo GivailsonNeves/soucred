@@ -22,7 +22,6 @@ function Benefits({ showNavigation = true }: BenefitsProps) {
     <section className="benefits" id="benefits">
       <Container>
         <h2>Só vi vantagens</h2>
-        {/* <div className="container-objects"> */}
         <Row xs={1} md={6} lg={12}>
           <Col>
             <img src={fast} alt={t("general.appName")} />
@@ -30,7 +29,6 @@ function Benefits({ showNavigation = true }: BenefitsProps) {
             <p>Dinheiro na conta em menos de 1 hora*</p>
           </Col>
           <Col>
-
             <img src={economy} alt={t("general.appName")} />
             <p className="title">Economia:</p>
             <p>Melhores taxas</p>
@@ -39,24 +37,18 @@ function Benefits({ showNavigation = true }: BenefitsProps) {
             <img src={smile} alt={t("general.appName")} />
             <p className="title">Facilidade:</p>
             <p>Tudo feito via WhatsApp</p>
-
           </Col>
           <Col>
             <img src={security} alt={t("general.appName")} />
             <p className="title">Segurança: </p>
             <p>Somos regulamentados pelo Banco Central</p>
-
           </Col>
           <Col>
             <img src={flexible} alt={t("general.appName")} />
             <p className="title">Flexibilidade:</p>
             <p> Sem valor mínimo das parcelas</p>
-
           </Col>
-
-
         </Row>
-        {/* </div> */}
       </Container>
     </section>
   );

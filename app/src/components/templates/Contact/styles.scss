@@ -43,14 +43,12 @@
   }
   .Contact-wrapper {
     margin: 0 auto;
-
     h2 {
       max-width: 580px;
       width: 100%;
       margin: 0 auto;
       font-weight: 400;
       margin-bottom: 30px;
-
       @media screen and (max-width: 499px) {
         font-size: 48px;
       }

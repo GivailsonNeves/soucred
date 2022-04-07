@@ -1,0 +1,31 @@
+.doubts {
+  margin-top: 60px;
+  background-color: #283950;
+  height: 426px;
+  .container {
+    display: flex;
+    img {
+      position: relative;
+      margin-top: -80px;
+    }
+    div {
+      margin-top: 80px;
+      margin-left: 40px;
+      h2 {
+        font-style: italic;
+        font-weight: bold;
+
+        color: #ffffff;
+      }
+      h4 {
+        width: 550px;
+        font-family: "Montserrat";
+        color: #ffffff;
+        margin-top: 40px;
+      }
+      .green-button {
+        width: 220px;
+      }
+    }
+  }
+}

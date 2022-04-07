@@ -7,29 +7,25 @@
         color: #283950;
         font-weight: bold;
         margin: 31px auto 0 30px;
+        font-family: "Montserrat";
     }
     .mini-title {
         color: #283950;
         margin: 0 auto 0 30px;
+        font-family: "Montserrat";
     }
     .middle {
         color: #283950;
         margin: 21px 28px 0 30px;
+        font-family: "Montserrat";
     }
-    .second-middle {
+    .seconds-middle {
         color: #283950;
-        font-size: 1.125em;
-        margin: 21px 28px 0 30px;
+        margin: 0px 28px 0 30px;
+        font-family: "Montserrat";
     }
-    button {
-        height: 56px;
-        border-radius: 28px;
-        font-size: 1.375em;
-        line-height: 0.5em;
-        background-color: #03ea6d;
-        color: #283950;
-        font-weight: bold;
-        border: 0px;
-        margin: 43px auto 32px 24px;
+    .green-button {
+        margin: 43px 24px 32px 24px;
+        width: 240px;
     }
 }

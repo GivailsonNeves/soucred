@@ -8,23 +8,31 @@
       font-style: italic;
       display: flex;
       align-items: flex-start;
+      width: 520px;
       img {
         width: 50px;
+        margin-top: 20px;
       }
     }
     h3 {
       margin-top: 30px;
       font-weight: bold;
       font-style: italic;
-      color: #03EA6D;
+      color: #03ea6d;
     }
     p {
       display: grid;
+      font-family: "Montserrat";
+      width: 420px;
+      .green-button {
+        width: 370px;
+        margin: 78px 0 115px 0;
+      }
     }
     .garota-propaganda {
       width: 100%;
       @media screen and (min-width: 768px) {
-        max-width: 400px;
+        max-width: 580px;
         position: absolute;
         bottom: 0;
         right: 0;
