@@ -8,6 +8,8 @@ import { Dispatch } from "./store";
 import { connect } from "react-redux";
 import { Spinner } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import LootFgts from "./pages/LootFgts";
+import DoSimulation from "./pages/DoSimulation";
 
 export interface AppProps {
   initAll?: any;
@@ -30,9 +32,9 @@ const App: React.FC<AppProps> = ({ initAll }) => {
   return fullLoading ? (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Route exact path="/"><Home /></Route>
+        <Route exact path="/lootfgts"><LootFgts /></Route>
+        <Route exact path="/dosimulation"><DoSimulation /></Route>
       </Switch>
     </Router>
   ) : (

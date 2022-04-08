@@ -6,12 +6,13 @@ import Titles from "../../molecules/titles/view";
 import "./styles.scss";
 
 import celPhone from "../,,/../../../assets/images/mockup_mao.png";
+import { Link } from "react-router-dom";
 
 interface SolutionsProps {
   showNavigation?: boolean;
 }
 
-function Solutions({ showNavigation = true }: SolutionsProps) {
+function Solutions() {
   const [t] = useTranslation();
   const myArray = ["√ Pague em até 80x no boleto.",
     "√ Sem valor mínimo das parcelas.",
@@ -34,6 +35,7 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
             <Row>
               <Col xs={12} md={6} >
                 <InfoCard
+                  link="/lootfgts"
                   title="Saque-aniversário FGTS"
                   middle="Quer antecipar seu saque-aniversário do FGTS?"
                   secondMiddle="Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
@@ -44,6 +46,7 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
               </Col>
               <Col xs={12} md={6} >
                 <InfoCard
+                  link="/dosimulation"
                   title="Crédito consignado "
                   miniTitle="(aposentados e pensionistas)"
                   middle="Crédito rápido e superseguro para ambos os lados, descontando a prestação diretamente de seu salário/INSS."
@@ -53,7 +56,7 @@ function Solutions({ showNavigation = true }: SolutionsProps) {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} md={{ span: 12}} >
+          <Col xs={12} md={{ span: 12 }} >
             <Row >
               <Col xs={6} md={4} >
                 <img src={celPhone} alt={t("general.appName")} />

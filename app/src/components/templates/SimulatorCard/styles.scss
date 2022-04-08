@@ -1,0 +1,32 @@
+.simulator-card {
+    width: 600px;
+    margin: 0 auto;
+    .container {
+        .cardSimulator {
+            justify-content: center;
+            max-width: 818px;
+
+            display: flex;
+            align-items: center;
+            margin: auto;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .sub-title {
+                margin-top: 20px;
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 0.8em;
+            }
+            .green-button {
+                margin-top: 10px !important;
+                margin-bottom: 60px !important;
+                width: 242px;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}

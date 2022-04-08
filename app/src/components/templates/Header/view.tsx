@@ -17,7 +17,7 @@ function Header({ showNavigation = true }: HeaderProps) {
       <Container>
         <Row>
           <Col xs={3} md={3} lg={3}>
-            <img src={logo} alt={t("general.appName")} />
+            <a href="/"><img src={logo} alt={t("general.appName")} /></a>
           </Col>
           <Col xs={9} md={9} lg={9}>
             <div className="links">
