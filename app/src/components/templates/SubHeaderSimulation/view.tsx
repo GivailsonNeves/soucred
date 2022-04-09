@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import SubHeaderMolecule from "../../molecules/sub-header-molecule/view";
 
 import "./styles.scss";
 
 import base from "../,,/../../../assets/images/base.png";
+import SubHeaderMolecule from "../../molecules/sub-header-molecule/view";
 
 function SubHeaderSimulation() {
   const [t] = useTranslation();
@@ -14,7 +14,8 @@ function SubHeaderSimulation() {
       <Container>
         <SubHeaderMolecule
           title="Empréstimo Consignado"
-          subTitle="Empréstimo rápido e seguro? Chama no Zap."
+          subTitle="Empréstimo rápido e seguro? "
+          subTitle2="Chama no Zap."
           baseTitle="*Aceitamos negativados."
           picture={base}
         ></SubHeaderMolecule>

@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import SubHeaderMolecule from "../../molecules/sub-header-molecule/view";
 
 import "./styles.scss";
 
 import base from "../,,/../../../assets/images/base.png";
+import SubHeaderMolecule from "../../molecules/sub-header-molecule/view";
 
 function SubHeader() {
   const [t] = useTranslation();
@@ -15,7 +15,7 @@ function SubHeader() {
         <SubHeaderMolecule
           title="Saque-aniversário do FGTS"
           subTitle="Que tal ter dinheiro agora sem comprometer sua renda mensal?"
-          baseTitle="Faça uma simulação de quanto você pode liberar no seu FGTS."
+          subTitle2="Faça uma simulação de quanto você pode liberar no seu FGTS."
           picture={base}
         ></SubHeaderMolecule>
       </Container>

@@ -3,6 +3,7 @@ import { Container, Row, Col, Button, ButtonGroup, DropdownButton, Dropdown } fr
 import GreenButton from "../../molecules/greenButton/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 import Titles from "../../molecules/titles/view";
+import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 
 import "./styles.scss";
 
@@ -44,7 +45,12 @@ const Simulators: React.FC = () => {
               title={t("De quanto você precisa?")}
               taxValue={1.59}
             />
-            <div className="sign-up">
+
+
+            <SignUpMolecule
+              numInstallments={[80,70,60]}
+            ></SignUpMolecule>
+            {/* <div className="sign-up">
               <DropdownButton as={ButtonGroup} title="80" id="bg-nested-dropdown">
                 <Dropdown.Item eventKey="1">80</Dropdown.Item>
                 <Dropdown.Item eventKey="2">70</Dropdown.Item>
@@ -54,7 +60,9 @@ const Simulators: React.FC = () => {
                 <p>R$ 0,00</p>
               </div>
               <GreenButton children="FAZER MEU CADASTRO"></GreenButton>
-            </div>
+            </div> */}
+
+
             <div className="second-sub-title">
               <p>Essas parcelas podem ser ainda melhores.</p>
               <p> Envie seus documentos e faça sua simulação personalizada.</p>

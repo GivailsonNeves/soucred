@@ -59,8 +59,8 @@
                 border-bottom-left-radius: 28px;
             }
             button:last-child {
-                border-bottom-right-radius: 28px !important;
-                border-top-right-radius: 28px !important;
+                border-bottom-right-radius: 28px ;
+                border-top-right-radius: 28px ;
             }
             button:hover {
                 background-color: #03ea6d;
@@ -73,50 +73,50 @@
             margin: auto;
             flex-direction: column;
             justify-content: space-evenly;
-            .sign-up {
-                justify-content: space-around;
-                align-items: center;
-                display: flex;
-                min-width: 660px;
-                height: 116px;
-                background: #283950 0% 0% no-repeat padding-box;
-                border-radius: 16px;
-                .dropdown {
-                    width: 120px;
-                    height: 71px;
-                    border: 0px;
-                    border-radius: 8px;
-                    font-size: 1.9em;
-                    margin: 0 auto;
-                    button {
-                        background-color: #283950;
-                        color: white;
-                        border: 1px solid #ffffff;
-                        border-radius: 8px !important;
-                        border-color: white;
-                    }
-                }
-                .last-p {
-                    p:first-child {
-                        color: white;
-                        font-size: 1.3em;
-                        font-family: "Montserrat";
-                        font-weight: normal;
-                        margin: 0px;
-                    }
-                    p:last-child {
-                        color: #03ea6d;
-                        font-family: "Montserrat";
-                        font-weight: bold;
-                        font-size: 1.9em;
-                        margin: 0px;
-                    }
-                }
-                .green-button {
-                    width: 290px;
-                    margin-left: 40px;
-                }
-            }
+            // .sign-up {
+            //     justify-content: space-around;
+            //     align-items: center;
+            //     display: flex;
+            //     min-width: 660px;
+            //     height: 116px;
+            //     background: #283950 0% 0% no-repeat padding-box;
+            //     border-radius: 16px;
+            //     .dropdown {
+            //         width: 120px;
+            //         height: 71px;
+            //         border: 0px;
+            //         border-radius: 8px;
+            //         font-size: 1.9em;
+            //         margin: 0 auto;
+            //         button {
+            //             background-color: #283950;
+            //             color: white;
+            //             border: 1px solid #ffffff;
+            //             border-radius: 8px !important;
+            //             border-color: white;
+            //         }
+            //     }
+            //     .last-p {
+            //         p:first-child {
+            //             color: white;
+            //             font-size: 1.3em;
+            //             font-family: "Montserrat";
+            //             font-weight: normal;
+            //             margin: 0px;
+            //         }
+            //         p:last-child {
+            //             color: #03ea6d;
+            //             font-family: "Montserrat";
+            //             font-weight: bold;
+            //             font-size: 1.9em;
+            //             margin: 0px;
+            //         }
+            //     }
+            //     .green-button {
+            //         width: 290px;
+            //         margin-left: 40px;
+            //     }
+            // }
             .green-button {
                 width: 242px;
                 display: flex;
