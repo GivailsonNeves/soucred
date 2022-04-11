@@ -1,11 +1,16 @@
+$color: #03ea6d;
+
 .green-button {
   height: 56px;
   border-radius: 28px;
   line-height: 0.5em;
-  background-color: #03ea6d;
+  background-color: $color;
   color: #283950;
   font-weight: bold;
   border: 0px;
   margin: 43px auto 32px 0px;
   font-family: "Montserrat";
+  &:hover {
+    background-color: darken($color, 10%);
+  }
 }

@@ -1,3 +1,5 @@
+$color: #03ea6d;
+
 .money-field {
     display: flex;
     margin-top: 62px;
@@ -13,6 +15,9 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        &:hover {
+            background-color: darken($color, 10%);
+        }
     }
     input {
         border: none;
