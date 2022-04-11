@@ -18,6 +18,9 @@ $color: #03ea6d;
         &:hover {
             background-color: darken($color, 10%);
         }
+        &:active{
+            background-color: darken($color, 10%);
+        }
     }
     input {
         border: none;
