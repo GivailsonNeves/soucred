@@ -1,6 +1,5 @@
 .simulate-loan {
     .container {
-        // width: 600px;
         margin: 0 auto;
         .statement {
             display: flex;
@@ -55,6 +54,228 @@
                 color: #c6c6c6;
                 p {
                     border: 2px solid #c6c6c6;
+                }
+            }
+            .button-marked {
+                cursor: pointer;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                color: #283950;
+                border: none;
+                align-items: center;
+                p:first-child {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid #03ea6d;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    align-content: flex-start;
+                    margin: auto 10px;
+                }
+            }
+        }
+        .second-tab {
+            .group-btn {
+            }
+            .form-data {
+                margin-top: 110px;
+                background: #03ea6d 0% 0% no-repeat padding-box;
+                box-shadow: 10px 20px 40px #00000034;
+                border-radius: 22px;
+                .input-field {
+                    display: inline-flex;
+                    align-items: center;
+                    width: 100%;
+                    .form-label {
+                        text-align: left;
+                        font: normal normal normal 2em Montserrat;
+                        letter-spacing: 0px;
+                        color: #283950;
+                    }
+                    .form-control {
+                        background-color: rgba(127, 17, 224, 0);
+                        font: normal normal normal 2em Montserrat;
+                        border: none;
+                        border-bottom: 1px solid #000000;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        border-radius: 0;
+                        & > :focus {
+                            -webkit-box-shadow: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .input-field-one {
+                    padding: 97px 97px 30px 97px;
+                    .form-label {
+                        width: 200px;
+                    }
+                    .form-control {
+                        width: 990px;
+                    }
+                }
+                .input-field-two {
+                    padding: 0 97px 30px 97px;
+                    .form-label {
+                        width: 280px;
+                    }
+                    .form-control {
+                        width: 910px;
+                    }
+                }
+                .input-field-three {
+                    padding: 0 97px 30px 97px;
+                    .form-label {
+                        width: 280px;
+                    }
+                    .form-control {
+                        width: 910px;
+                    }
+                }
+                .input-field-four {
+                    padding: 0 97px 30px 97px;
+                    .form-label {
+                        width: 370px;
+                    }
+                    .money-field {
+                        margin: 0;
+                        width: 730px;
+                        margin-left: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        align-items: center;
+                        button {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #03ea6d !important;
+                            border: 2px solid #ffffff;
+                        }
+                        input {
+                            width: 240px;
+                            text-align: center;
+                            background-color: rgba(127, 17, 224, 0);
+                            font: normal normal normal 2em Montserrat;
+                            border: none;
+                            border-bottom: 1px solid #000000;
+                            box-shadow: none;
+                            border-radius: 0;
+                        }
+                    }
+                }
+                .input-field-five {
+                    padding: 0 97px 30px 97px;
+                    .form-label {
+                        width: 850px;
+                    }
+                    .money-field {
+                        margin: 0;
+                        width: 730px;
+                        margin-left: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+                        align-items: center;
+                        button {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #03ea6d !important;
+                            border: 2px solid #ffffff;
+                        }
+                        input {
+                            width: 240px;
+                            text-align: center;
+                            background-color: rgba(127, 17, 224, 0);
+                            font: normal normal normal 2em Montserrat;
+                            border: none;
+                            border-bottom: 1px solid #000000;
+                            box-shadow: none;
+                            border-radius: 0;
+                        }
+                    }
+                }
+                .input-field-six {
+                    padding: 0 97px 30px 97px;
+                    button {
+                        margin-left: 60px;
+                        background: transparent;
+                        width: 288px;
+                        height: 56px;
+                        border: 2px solid #ffffff;
+                        border-radius: 28px;
+                        color: #283950;
+                    }
+                }
+                .input-field-seven {
+                    padding: 0 97px 30px 97px;
+                    button {
+                        margin-left: 60px;
+                        background: transparent;
+                        width: 288px;
+                        height: 56px;
+                        border: 2px solid #ffffff;
+                        border-radius: 28px;
+                        color: #283950;
+                    }
+                }
+                .input-field-eight {
+                    padding: 0 97px 30px 97px;
+                    button {
+                        margin-left: 60px;
+                        background: transparent;
+                        width: 288px;
+                        height: 56px;
+                        border: 2px solid #ffffff;
+                        border-radius: 28px;
+                        color: #283950;
+                    }
+                }
+                .send-container {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .send {
+                        margin: 99px auto 82px;
+                        background: white;
+                        width: 288px;
+                        height: 56px;
+                        border: 2px solid #ffffff;
+                        border-radius: 28px;
+                        color: #283950;
+                    }
+                }
+            }
+        }
+        .third-tab {
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            img {
+                margin-top: 26px;
+                width: 500px;
+                margin-left: -130px;
+            }
+            .tanks {
+                width: 800px;
+                background: #ededed 0% 0% no-repeat padding-box;
+                box-shadow: 10px 20px 40px #00000034;
+                border-radius: 22px;
+                z-index: -1;
+                margin-left: -160px;
+                margin-top: 100px;
+                p {
+                    width: 430px;
+                    font-weight: bold;
+                    font-style: italic;
+                    margin: 101px auto;
+                    font-size: 2.2em;
+                    line-height: 1;
                 }
             }
         }
