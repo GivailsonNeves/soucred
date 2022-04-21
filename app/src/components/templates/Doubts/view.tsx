@@ -21,8 +21,13 @@ function Doubts({ showNavigation = true }: DoubtsProps) {
         <img src={celPhone} alt={t("general.appName")} />
         <div>
           <h2>Dúvidas?</h2>
-          <h4>Estamos on no WhatsApp de segunda a sexta das 8h às 18h. É só chamar que a gente responde na hora pra agilizar o seu lado.</h4>
-          <GreenButton>CHAMA NO ZAP</GreenButton>
+          <h4>
+            Estamos on no WhatsApp de segunda a sexta das 8h às 18h. É só chamar
+            que a gente responde na hora pra agilizar o seu lado.
+          </h4>
+          <div>
+            <GreenButton>CHAMA NO ZAP</GreenButton>
+          </div>
         </div>
       </Container>
     </section>

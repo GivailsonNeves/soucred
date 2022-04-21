@@ -9,14 +9,14 @@ import SubHeaderSimulation from "../../components/templates/SubHeaderSimulation/
 
 import "./styles.scss";
 
-export interface DoSimulationViewProps { }
+export interface DoSimulationViewProps {}
 
 const DoSimulation: React.FC<DoSimulationViewProps> = () => {
   const [t] = useTranslation();
 
   return (
     <>
-      <Header />
+      <Header offset={0} />
       <SubHeaderSimulation />
       <SimulateLoan />
       {/* <SimulatorCard />

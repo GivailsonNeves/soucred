@@ -9,14 +9,14 @@ import SubHeader from "../../components/templates/SubHeader";
 
 import "./styles.scss";
 
-export interface LootFgtsViewProps { }
+export interface LootFgtsViewProps {}
 
 const LootFgts: React.FC<LootFgtsViewProps> = () => {
   const [t] = useTranslation();
 
   return (
     <>
-      <Header />
+      <Header offset={0} />
       <SubHeader />
       <SimulatorCard />
       <Explanation />

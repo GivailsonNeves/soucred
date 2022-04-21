@@ -5,7 +5,7 @@ import "./styles.scss";
 export interface GreenButtonProps {
   style?: object;
   onClick?: any;
-  children: React.ReactNode;
+  children: any;
   bold?: boolean;
 }
 
