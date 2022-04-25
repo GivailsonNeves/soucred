@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 import logo from "../,,/../../../assets/images/2_logo.png";
+import SocialLinks from "../../atoms/social-links";
 
 import "./styles.scss";
 
@@ -13,19 +14,20 @@ const Share: React.FC<ShareProps> = ({ socialLinks }) => {
   const [t] = useTranslation();
 
   return (
-    <Container>
-      <div className="call">
-
-      </div>
-      <div className="links">
-        <div>
-          <a href="#">Política de privacidade</a>
-          <span></span>
-          <a href="#">Termos de uso</a>
-        </div>
-        <img src={logo} alt={t("general.appName")} />
-      </div>
-    </Container>
+    <section className="share-contents" id="share-contents">
+      <Container>
+        <h3>Compartilhe: </h3>
+        <SocialLinks
+          links={{
+            facebook: "www.facebook.com",
+            twitter: "www.twitter.com",
+            linkedin: "www.linkedin.com",
+            whatsapp: "+556199999999",
+            telegran: "+556199999999",
+          }}
+        ></SocialLinks>
+      </Container>
+    </section>
   );
 };
 
