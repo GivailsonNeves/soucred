@@ -10,6 +10,7 @@ import { Spinner } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import LootFgts from "./pages/LootFgts";
 import DoSimulation from "./pages/DoSimulation";
+import Blog from "./pages/Blog";
 
 export interface AppProps {
   initAll?: any;
@@ -35,6 +36,7 @@ const App: React.FC<AppProps> = ({ initAll }) => {
         <Route exact path="/"><Home /></Route>
         <Route exact path="/lootfgts"><LootFgts /></Route>
         <Route exact path="/dosimulation"><DoSimulation /></Route>
+        <Route exact path="/blog"><Blog /></Route>
       </Switch>
     </Router>
   ) : (

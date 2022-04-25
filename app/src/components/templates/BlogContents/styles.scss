@@ -1,0 +1,34 @@
+.blog-contents {
+  .container {
+    .title-photo {
+      img {
+        width: 100%;
+        height: 400px;
+      }
+    }
+    .titles {
+      margin-top: 30px;
+    }
+    .content {
+      div {
+        display: flex;
+        div {
+          display: block;
+        }
+      }
+      img:first-child {
+        width: 300px;
+        height: 250px;
+        margin-right: 20px;
+      }
+      img:last-child {
+        width: 300px;
+        height: 250px;
+        margin-left: 20px;
+      }
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
