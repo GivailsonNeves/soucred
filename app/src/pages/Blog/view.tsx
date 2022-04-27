@@ -7,7 +7,7 @@ import Share from "../../components/templates/Share";
 
 import "./styles.scss";
 
-export interface BlogViewProps { }
+export interface BlogViewProps {}
 
 const Blog: React.FC<BlogViewProps> = () => {
   const [t] = useTranslation();
@@ -16,7 +16,7 @@ const Blog: React.FC<BlogViewProps> = () => {
     <>
       <HeaderBlog offset={0} />
       <BlogContents />
-      <Share />
+      <Share socialLinks={{}} />
       <Footer />
     </>
   );

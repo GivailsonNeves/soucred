@@ -10,6 +10,7 @@ export interface SocialLinks{
     linkedin?: string;
     whatsapp?: string;
     calendly?: string;
+    telegran?: string;
 }
 
 export const socialLinks = createModel<RootModel>()({

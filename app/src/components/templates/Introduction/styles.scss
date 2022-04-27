@@ -8,7 +8,7 @@
       font-style: italic;
       display: flex;
       align-items: flex-start;
-      width: 520px;
+      max-width: 520px;
       img {
         width: 50px;
         margin-top: 20px;
@@ -23,10 +23,16 @@
     p {
       display: grid;
       font-family: "Montserrat";
-      width: 420px;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        max-width: 420px;
+      }
       .green-button {
-        width: 370px;
         margin: 78px 0 115px 0;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+          max-width: 370px;
+        }
       }
     }
     .garota-propaganda {

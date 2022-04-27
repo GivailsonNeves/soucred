@@ -36,7 +36,12 @@ function Header({ offset, showNavigation = true }: HeaderProps) {
       <Container>
         <Navbar expand="lg" expanded={isNavCollapsed} className="navbar">
           <Navbar.Brand>
-            <Link className="title" to="/">
+            <Link
+              className="title"
+              to="/"
+              onClick={(event: any) => closeMenu(event, "")}
+              href={renderHREF("/")}
+            >
               <img src={logo} alt={t("general.appName")} />
             </Link>
           </Navbar.Brand>
@@ -46,26 +51,26 @@ function Header({ offset, showNavigation = true }: HeaderProps) {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav.Link
-              onClick={(event: any) => closeMenu(event, "Office")}
-              href={renderHREF("#Office")}
+              onClick={(event: any) => closeMenu(event, "solution-section")}
+              href={renderHREF("#solution-section")}
             >
               Soluções
             </Nav.Link>
             <Nav.Link
-              onClick={(event: any) => closeMenu(event, "Acting")}
-              href={renderHREF("#Acting")}
+              onClick={(event: any) => closeMenu(event, "how-works")}
+              href={renderHREF("#how-works")}
             >
               Como funciona
             </Nav.Link>
             <Nav.Link
-              onClick={(event: any) => closeMenu(event, "Team")}
-              href={renderHREF("#Team")}
+              onClick={(event: any) => closeMenu(event, "simulator")}
+              href={renderHREF("#simulator")}
             >
               Simulador
             </Nav.Link>
             <Nav.Link
-              onClick={(event: any) => closeMenu(event, "Contact")}
-              href={renderHREF("#Contact")}
+              onClick={(event: any) => closeMenu(event, "doubts")}
+              href={renderHREF("#doubts")}
               className="last"
             >
               Ajuda

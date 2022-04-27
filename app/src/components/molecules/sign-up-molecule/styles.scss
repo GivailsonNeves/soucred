@@ -1,45 +1,51 @@
 .sign-up-molecule {
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    width: 660px;
-    height: 116px;
-    background: #283950 0% 0% no-repeat padding-box;
-    border-radius: 16px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  max-width: 660px;
+  background: #283950 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  margin: 0 auto;
+  //   height: 116px;
+  padding: 20px;
+  flex-direction: column;
+  @media screen and (min-width: 782px) {
+    flex-direction: row;
+  }
+  .dropdown {
+    width: 120px;
+    height: 71px;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 1.9em;
     margin: 0 auto;
-    .dropdown {
-        width: 120px;
-        height: 71px;
-        border: 0px;
-        border-radius: 8px;
-        font-size: 1.9em;
-        margin: 0 auto;
-        button {
-            background-color: #283950;
-            color: white;
-            border: 1px solid #ffffff;
-            border-radius: 8px !important;
-            border-color: white;
-        }
+    button {
+      background-color: #283950;
+      color: white;
+      border: 1px solid #ffffff;
+      border-radius: 8px !important;
+      border-color: white;
     }
-    .last-p {
-        p:first-child {
-            color: white;
-            font-size: 1.3em;
-            font-family: "Montserrat";
-            font-weight: normal;
-            margin: 0px;
-        }
-        p:last-child {
-            color: #03ea6d;
-            font-family: "Montserrat";
-            font-weight: bold;
-            font-size: 1.9em;
-            margin: 0px;
-        }
+  }
+  .last-p {
+    margin: 0 20px;
+    p:first-child {
+      color: white;
+      font-size: 1.3em;
+      font-family: "Montserrat";
+      font-weight: normal;
+      margin: 0px;
     }
-    .green-button {
-        width: 290px;
-        margin-left: 40px;
+    p:last-child {
+      color: #03ea6d;
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 1.9em;
+      margin: 0px;
     }
+  }
+  .green-button {
+    width: 290px;
+    margin-left: 40px;
+  }
 }

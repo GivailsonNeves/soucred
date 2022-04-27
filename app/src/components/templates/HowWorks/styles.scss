@@ -12,7 +12,7 @@
     }
     .titles-componte {
       h2 {
-        width: 750px;
+        max-width: 750px;
       }
     }
     div:first-child {
@@ -47,7 +47,7 @@
           height: auto;
         }
         h5 {
-          width: 177px;
+          max-width: 177px;
           text-align: center;
           color: #283950;
           margin-top: 20px;
@@ -92,7 +92,8 @@
       align-items: center;
       margin-top: 76px;
       h4 {
-        width: 550px;
+        max-width: 550px;
+        width: 100%;
         text-align: center;
         font-weight: bold;
         font-family: "Montserrat";

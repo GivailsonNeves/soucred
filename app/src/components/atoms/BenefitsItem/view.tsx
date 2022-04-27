@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-interface BenefitsItemProps {
+export interface BenefitsItemProps {
   imgPath: string;
   title: string;
   text: string;
@@ -13,7 +13,9 @@ const BenefitsItem: React.FC<BenefitsItemProps> = ({
 }) => {
   return (
     <div className="BenefitsItem">
-      <img src={imgPath} alt={title} />
+      <div>
+        <img src={imgPath} alt={title} />
+      </div>
       <p className="title">{title}:</p>
       <p>{text}</p>
     </div>

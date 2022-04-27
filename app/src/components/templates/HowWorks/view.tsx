@@ -19,7 +19,7 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
   const [t] = useTranslation();
 
   return (
-    <section className="how-works">
+    <section className="how-works" id="how-works">
       <Container>
         <Titles
           greenText="Como funciona?"
@@ -27,7 +27,7 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
         />
         <div className="documents">
           <p>Saque-aniversário FGTS:</p>
-          <Row  >
+          <Row>
             <Col xs={12} md={3}>
               <img src={identity} alt={t("general.appName")} />
               <h5>Documento de identificação pessoal.</h5>
@@ -67,7 +67,9 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
           </h4>
           <h4> Quer ver como é fácil e rápido?</h4>
         </div>
-        <GreenButton onClick={() => console.log("vai porco")}>CHAMA NO ZAP</GreenButton>
+        <GreenButton onClick={() => console.log("vai porco")}>
+          CHAMA NO ZAP
+        </GreenButton>
         <div className="info">
           <h4>
             Fique atento aos golpes: a Soucred não solicita nenhum tipo de

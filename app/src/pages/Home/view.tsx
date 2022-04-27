@@ -32,9 +32,9 @@ const HomeView: React.FC<HomeViewProps> = () => {
       <Header offset={offset} />
       <Introduction />
       <Benefits />
-      {/* <Solutions /> */}
-      {/* <HowWorks /> */}
-      {/* <Simulators /> */}
+      <Solutions />
+      <HowWorks />
+      <Simulators />
       <Doubts />
       <Footer />
     </>

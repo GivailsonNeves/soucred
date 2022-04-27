@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/wp-content/themes/dalazen/static/css/main.e3114c55.chunk.css",
-    "main.js": "/wp-content/themes/dalazen/static/js/main.986e6e50.chunk.js",
-    "main.js.map": "/wp-content/themes/dalazen/static/js/main.986e6e50.chunk.js.map",
-    "runtime-main.js": "/wp-content/themes/dalazen/static/js/runtime-main.7e2fb4bd.js",
-    "runtime-main.js.map": "/wp-content/themes/dalazen/static/js/runtime-main.7e2fb4bd.js.map",
-    "static/js/2.b6e8dbc5.chunk.js": "/wp-content/themes/dalazen/static/js/2.b6e8dbc5.chunk.js",
-    "static/js/2.b6e8dbc5.chunk.js.map": "/wp-content/themes/dalazen/static/js/2.b6e8dbc5.chunk.js.map",
-    "static/js/3.d1a18bee.chunk.js": "/wp-content/themes/dalazen/static/js/3.d1a18bee.chunk.js",
-    "static/js/3.d1a18bee.chunk.js.map": "/wp-content/themes/dalazen/static/js/3.d1a18bee.chunk.js.map",
+    "main.css": "/wp-content/themes/dalazen/static/css/main.0d6863cb.chunk.css",
+    "main.js": "/wp-content/themes/dalazen/static/js/main.8f8d06c7.chunk.js",
+    "main.js.map": "/wp-content/themes/dalazen/static/js/main.8f8d06c7.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/dalazen/static/js/runtime-main.837bb7d8.js",
+    "runtime-main.js.map": "/wp-content/themes/dalazen/static/js/runtime-main.837bb7d8.js.map",
+    "static/js/2.93fc5ea8.chunk.js": "/wp-content/themes/dalazen/static/js/2.93fc5ea8.chunk.js",
+    "static/js/2.93fc5ea8.chunk.js.map": "/wp-content/themes/dalazen/static/js/2.93fc5ea8.chunk.js.map",
+    "static/js/3.081edd58.chunk.js": "/wp-content/themes/dalazen/static/js/3.081edd58.chunk.js",
+    "static/js/3.081edd58.chunk.js.map": "/wp-content/themes/dalazen/static/js/3.081edd58.chunk.js.map",
     "index.html": "/wp-content/themes/dalazen/index.html",
-    "static/css/main.e3114c55.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.e3114c55.chunk.css.map",
-    "static/js/2.b6e8dbc5.chunk.js.LICENSE.txt": "/wp-content/themes/dalazen/static/js/2.b6e8dbc5.chunk.js.LICENSE.txt",
+    "static/css/main.0d6863cb.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.0d6863cb.chunk.css.map",
+    "static/js/2.93fc5ea8.chunk.js.LICENSE.txt": "/wp-content/themes/dalazen/static/js/2.93fc5ea8.chunk.js.LICENSE.txt",
     "static/media/Grupo_11.2f588b43.png": "/wp-content/themes/dalazen/static/media/Grupo_11.2f588b43.png",
     "static/media/Grupo_12.b8deb124.png": "/wp-content/themes/dalazen/static/media/Grupo_12.b8deb124.png",
     "static/media/Grupo_6.edc5ef3a.png": "/wp-content/themes/dalazen/static/media/Grupo_6.edc5ef3a.png",
     "static/media/base.e93957ec.png": "/wp-content/themes/dalazen/static/media/base.e93957ec.png",
+    "static/media/caixa.6cdcf35e.png": "/wp-content/themes/dalazen/static/media/caixa.6cdcf35e.png",
+    "static/media/caixaFrente.02f7d597.jpeg": "/wp-content/themes/dalazen/static/media/caixaFrente.02f7d597.jpeg",
     "static/media/img_3.2351c293.png": "/wp-content/themes/dalazen/static/media/img_3.2351c293.png",
     "static/media/maopequena.0c1d5b46.png": "/wp-content/themes/dalazen/static/media/maopequena.0c1d5b46.png",
     "static/media/mockup_celular.220a1b0a.png": "/wp-content/themes/dalazen/static/media/mockup_celular.220a1b0a.png",
     "static/media/mockup_mao.709eac82.png": "/wp-content/themes/dalazen/static/media/mockup_mao.709eac82.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e2fb4bd.js",
-    "static/js/2.b6e8dbc5.chunk.js",
-    "static/css/main.e3114c55.chunk.css",
-    "static/js/main.986e6e50.chunk.js"
+    "static/js/runtime-main.837bb7d8.js",
+    "static/js/2.93fc5ea8.chunk.js",
+    "static/css/main.0d6863cb.chunk.css",
+    "static/js/main.8f8d06c7.chunk.js"
   ]
 }

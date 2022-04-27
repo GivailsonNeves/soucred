@@ -1,8 +1,11 @@
 .BenefitsItem {
   text-align: center;
-  img {
-    width: auto;
-    height: auto;
+  & > div {
+    min-height: 103px;
+    img {
+      width: auto;
+      height: 100%;
+    }
   }
   .title {
     margin-top: 30px;
@@ -15,5 +18,9 @@
     font-size: 0.8em;
     max-width: 115px;
     margin: 0 auto;
+  }
+  margin-bottom: 20px;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 0;
   }
 }
