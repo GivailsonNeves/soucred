@@ -10,7 +10,14 @@ $color: #03ea6d;
   border: 0px;
   margin: 43px auto 32px 0px;
   font-family: "Montserrat";
-  &:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover,
+  &:active,
+  &:focus-visible,
+  &:focus {
+    border: 0 none;
     background-color: darken($color, 10%);
   }
 }

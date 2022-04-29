@@ -1,29 +1,30 @@
 import { useState } from "react";
-import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
+import { Link, useLocation } from "react-router-dom";
+import logo from "../,,/../../../assets/images/favicon_soucred.png";
+import { UtilsNavigator } from "../../../utils";
 import "./styles.scss";
 
-import logo from "../,,/../../../assets/images/favicon_soucred.png";
-import { Link, useLocation } from "react-router-dom";
-
 interface HeaderProps {
-  showNavigation?: boolean;
   offset: number;
 }
 
-function Header({ offset, showNavigation = true }: HeaderProps) {
+function Header({ offset }: HeaderProps) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const location = useLocation();
   const [t] = useTranslation();
 
-  const closeMenu = (event: any, elementName: string) => {
-    event.preventDefault();
-    const scrollTop = document.getElementById(elementName)?.offsetTop || 0;
-    window.scrollTo(0, scrollTop - 120 || 0);
+  const isHome = location.pathname === "/";
 
-    setIsNavCollapsed(false);
-    return false;
+  const closeMenu = (event: any, elementName: string) => {
+    if (isHome) {
+      event.preventDefault();
+      UtilsNavigator.gotoSectionName(elementName);
+      setIsNavCollapsed(false);
+    } else {
+      UtilsNavigator.gotoSectionName("/");
+    }
   };
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
@@ -45,37 +46,41 @@ function Header({ offset, showNavigation = true }: HeaderProps) {
               <img src={logo} alt={t("general.appName")} />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            onClick={handleNavCollapse}
-          />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav.Link
-              onClick={(event: any) => closeMenu(event, "solution-section")}
-              href={renderHREF("#solution-section")}
-            >
-              Soluções
-            </Nav.Link>
-            <Nav.Link
-              onClick={(event: any) => closeMenu(event, "how-works")}
-              href={renderHREF("#how-works")}
-            >
-              Como funciona
-            </Nav.Link>
-            <Nav.Link
-              onClick={(event: any) => closeMenu(event, "simulator")}
-              href={renderHREF("#simulator")}
-            >
-              Simulador
-            </Nav.Link>
-            <Nav.Link
-              onClick={(event: any) => closeMenu(event, "doubts")}
-              href={renderHREF("#doubts")}
-              className="last"
-            >
-              Ajuda
-            </Nav.Link>
-          </Navbar.Collapse>
+          {isHome && (
+            <>
+              <Navbar.Toggle
+                aria-controls="responsive-navbar-nav"
+                onClick={handleNavCollapse}
+              />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav.Link
+                  onClick={(event: any) => closeMenu(event, "solution-section")}
+                  href={renderHREF("#solution-section")}
+                >
+                  Soluções
+                </Nav.Link>
+                <Nav.Link
+                  onClick={(event: any) => closeMenu(event, "how-works")}
+                  href={renderHREF("#how-works")}
+                >
+                  Como funciona
+                </Nav.Link>
+                <Nav.Link
+                  onClick={(event: any) => closeMenu(event, "simulator")}
+                  href={renderHREF("#simulator")}
+                >
+                  Simulador
+                </Nav.Link>
+                <Nav.Link
+                  onClick={(event: any) => closeMenu(event, "doubts")}
+                  href={renderHREF("#doubts")}
+                  className="last"
+                >
+                  Ajuda
+                </Nav.Link>
+              </Navbar.Collapse>
+            </>
+          )}
         </Navbar>
       </Container>
     </section>

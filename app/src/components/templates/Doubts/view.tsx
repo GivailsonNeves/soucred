@@ -26,7 +26,12 @@ function Doubts({ showNavigation = true }: DoubtsProps) {
             que a gente responde na hora pra agilizar o seu lado.
           </h4>
           <div>
-            <GreenButton>CHAMA NO ZAP</GreenButton>
+            <GreenButton
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=+5561996517829"
+            >
+              CHAMA NO ZAP
+            </GreenButton>
           </div>
         </div>
       </Container>

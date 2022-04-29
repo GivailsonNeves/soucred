@@ -1,35 +1,38 @@
 .info-card {
-    background-color: #ffffff;
-    box-shadow: 10px 10px 40px #00000019;
-    border: 1px solid #03ea6d;
-    border-radius: 22px;
-    .title {
-        color: #283950;
-        font-weight: bold;
-        margin: 31px auto 0 30px;
-        font-family: "Montserrat";
-        a {
-            text-decoration: none;
-            color: #283950;
-        }
+  background-color: #ffffff;
+  box-shadow: 10px 10px 40px #00000019;
+  border: 1px solid #03ea6d;
+  border-radius: 22px;
+  .title {
+    color: #283950;
+    font-weight: bold;
+    margin: 31px auto 0 30px;
+    font-family: "Montserrat";
+    a {
+      text-decoration: none;
+      color: #283950;
     }
-    .mini-title {
-        color: #283950;
-        margin: 0 auto 0 30px;
-        font-family: "Montserrat";
-    }
-    .middle {
-        color: #283950;
-        margin: 21px 28px 0 30px;
-        font-family: "Montserrat";
-    }
-    .seconds-middle {
-        color: #283950;
-        margin: 0px 28px 0 30px;
-        font-family: "Montserrat";
-    }
+  }
+  .mini-title {
+    color: #283950;
+    margin: 0 auto 0 30px;
+    font-family: "Montserrat";
+  }
+  .middle {
+    color: #283950;
+    margin: 21px 28px 0 30px;
+    font-family: "Montserrat";
+  }
+  .seconds-middle {
+    color: #283950;
+    margin: 0px 28px 0 30px;
+    font-family: "Montserrat";
+  }
+  .controls {
+    padding: 0 20px;
     .green-button {
-        margin: 43px 24px 32px 24px;
-        width: 240px;
+      max-width: 240px;
+      width: 100%;
     }
+  }
 }

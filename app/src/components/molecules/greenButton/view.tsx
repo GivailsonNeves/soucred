@@ -1,8 +1,8 @@
-import { Button, Container, Modal } from "react-bootstrap";
+import { Button, ButtonProps } from "react-bootstrap";
 
 import "./styles.scss";
 
-export interface GreenButtonProps {
+export interface GreenButtonProps extends ButtonProps {
   style?: object;
   onClick?: any;
   children: any;
@@ -14,12 +14,18 @@ const GreenButton: React.FC<GreenButtonProps> = ({
   onClick,
   children,
   bold,
+  ...props
 }) => {
   const classes = ["green-button"];
   if (bold) classes.push("bold");
 
   return (
-    <Button className={classes.join(" ")} style={style} onClick={onClick}>
+    <Button
+      className={classes.join(" ")}
+      onClick={onClick}
+      style={style}
+      {...props}
+    >
       {children}
     </Button>
   );

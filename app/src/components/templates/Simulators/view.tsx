@@ -1,5 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Container, Row, Col, Button, ButtonGroup, DropdownButton, Dropdown } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  ButtonGroup,
+  DropdownButton,
+  Dropdown,
+} from "react-bootstrap";
 import GreenButton from "../../molecules/greenButton/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 import Titles from "../../molecules/titles/view";
@@ -20,14 +28,21 @@ const Simulators: React.FC = () => {
               subTitleText="Que tal ter dinheiro agora sem comprometer sua renda mensal? Antecipe até 7 anos do seu saque-aniversário."
             />
           </Col>
-          <Col className="cardSimulator">
-            <SimulatorPanel
-              title={t("simulator.what-is-your-value")}
-              taxValue={1.59}
-            />
-            <GreenButton onClick={() => console.log("vai porco")}>AVANÇAR</GreenButton>
+          <Col>
+            <div className="cardSimulator">
+              <SimulatorPanel
+                title={t("simulator.what-is-your-value")}
+                taxValue={1.59}
+              />
+              <GreenButton onClick={() => console.log("vai porco")}>
+                AVANÇAR
+              </GreenButton>
+              <p className="sub-title">
+                *Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa
+                aqui.
+              </p>
+            </div>
           </Col>
-          <p className="sub-title">*Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa aqui.</p>
         </Row>
         <Row className="second-row">
           <Col xs={12} md={6} lg={3}>
@@ -45,24 +60,7 @@ const Simulators: React.FC = () => {
               title={t("De quanto você precisa?")}
               taxValue={1.59}
             />
-
-
-            <SignUpMolecule
-              numInstallments={[80,70,60]}
-            ></SignUpMolecule>
-            {/* <div className="sign-up">
-              <DropdownButton as={ButtonGroup} title="80" id="bg-nested-dropdown">
-                <Dropdown.Item eventKey="1">80</Dropdown.Item>
-                <Dropdown.Item eventKey="2">70</Dropdown.Item>
-              </DropdownButton>
-              <div className="last-p">
-                <p>parcelas de</p>
-                <p>R$ 0,00</p>
-              </div>
-              <GreenButton children="FAZER MEU CADASTRO"></GreenButton>
-            </div> */}
-
-
+            <SignUpMolecule numInstallments={[80, 70, 60]}></SignUpMolecule>
             <div className="second-sub-title">
               <p>Essas parcelas podem ser ainda melhores.</p>
               <p> Envie seus documentos e faça sua simulação personalizada.</p>

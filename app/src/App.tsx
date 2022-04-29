@@ -33,10 +33,18 @@ const App: React.FC<AppProps> = ({ initAll }) => {
   return fullLoading ? (
     <Router>
       <Switch>
-        <Route exact path="/"><Home /></Route>
-        <Route exact path="/lootfgts"><LootFgts /></Route>
-        <Route exact path="/dosimulation"><DoSimulation /></Route>
-        <Route exact path="/blog"><Blog /></Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/lootfgts">
+          <LootFgts />
+        </Route>
+        <Route path="/dosimulation">
+          <DoSimulation />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
       </Switch>
     </Router>
   ) : (

@@ -1,33 +1,44 @@
 $color: #03ea6d;
 
 .money-field {
-    display: flex;
-    margin-top: 62px;
+  display: flex;
+  margin-top: 62px;
+  button {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #03ea6d;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+    &:active {
+      background-color: darken($color, 10%);
+    }
+  }
+  input {
+    border: none;
+    border-bottom: 1px #ccc solid;
+    width: 140px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 678px) {
     button {
-        width: 69px;
-        height: 69px;
-        border: 1px solid #03ea6d;
-        border-radius: 50%;
-        background-color: white;
-        color: black;
-        font-size: 74px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        &:hover {
-            background-color: darken($color, 10%);
-        }
-        &:active{
-            background-color: darken($color, 10%);
-        }
+      width: 69px;
+      height: 69px;
+      font-size: 74px;
     }
     input {
-        border: none;
-        border-bottom: 1px #ccc solid;
-        width: 240px;
-        text-align: center;
-        font-size: 38px;
-        font-weight: bold;
+      width: 240px;
+      font-size: 38px;
     }
+  }
 }

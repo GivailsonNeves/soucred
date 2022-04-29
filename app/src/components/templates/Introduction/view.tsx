@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
+import { UtilsNavigator } from "../../../utils";
 import "./styles.scss";
 
 import logo from "../,,/../../../assets/images/img_3.png";
@@ -28,7 +28,13 @@ function Introduction({ showNavigation = true }: IntroductionProps) {
               Temos diversas soluções de crédito de acordo com a sua
               necessidade, com as melhores taxas e com todo o processo feito via
               WhatsApp.
-              <GreenButton>CONHEÇA NOSSAS SOLUÇÕES.</GreenButton>
+              <GreenButton
+                onClick={() =>
+                  UtilsNavigator.gotoSectionName("solution-section")
+                }
+              >
+                CONHEÇA NOSSAS SOLUÇÕES.
+              </GreenButton>
             </p>
           </Col>
           <Col xs={12} md={6} lg={6}>
