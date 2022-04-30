@@ -1,0 +1,21 @@
+.BlogItem {
+  margin-bottom: 40px;
+  border: 0 none;
+  h2 {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1em;
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  small {
+    line-height: 0.5em;
+    font-size: 0.5em;
+  }
+}

@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-
-import "./styles.scss";
-
-import logo from "../,,/../../../assets/images/favicon_soucred.png";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../,,/../../../assets/images/favicon_soucred.png";
+import "./styles.scss";
 
 interface HeaderBlogProps {
   showNavigation?: boolean;
@@ -45,11 +43,7 @@ function HeaderBlog({ offset, showNavigation = true }: HeaderBlogProps) {
             onClick={handleNavCollapse}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav.Link
-              onClick={(event: any) => closeMenu(event, "Contact")}
-              href={renderHREF("#Contact")}
-              className="last"
-            >
+            <Nav.Link href="/blog" className="last">
               Blog
             </Nav.Link>
           </Navbar.Collapse>

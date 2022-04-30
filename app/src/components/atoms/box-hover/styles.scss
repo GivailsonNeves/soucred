@@ -1,0 +1,48 @@
+.BoxHover {
+  position: relative;
+  .text-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-end;
+    h2 {
+      font-size: 1.2em;
+      line-height: 1em;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 0;
+      font-weight: normal;
+      line-height: 1em;
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+    small {
+      line-height: 0.5em;
+      font-size: 0.5em;
+    }
+  }
+  .hover {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(
+      to top,
+      rgba(#000, 0.9),
+      transparent,
+      transparent
+    );
+  }
+}

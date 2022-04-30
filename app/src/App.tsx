@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-
-import Home from "./pages/Home";
-
-import "./App.scss";
-import { Dispatch } from "./store";
-import { connect } from "react-redux";
 import { Spinner } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import LootFgts from "./pages/LootFgts";
-import DoSimulation from "./pages/DoSimulation";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.scss";
 import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
+import DoSimulation from "./pages/DoSimulation";
+import Home from "./pages/Home";
+import LootFgts from "./pages/LootFgts";
+import { Dispatch } from "./store";
 
 export interface AppProps {
   initAll?: any;
@@ -42,8 +40,11 @@ const App: React.FC<AppProps> = ({ initAll }) => {
         <Route path="/dosimulation">
           <DoSimulation />
         </Route>
-        <Route path="/blog">
+        <Route exact path="/blog">
           <Blog />
+        </Route>
+        <Route path="/blog/:slug">
+          <BlogArticle />
         </Route>
       </Switch>
     </Router>
