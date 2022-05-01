@@ -74,9 +74,11 @@ function Header({ offset }: HeaderProps) {
                 <Nav.Link
                   onClick={(event: any) => closeMenu(event, "doubts")}
                   href={renderHREF("#doubts")}
-                  className="last"
                 >
                   Ajuda
+                </Nav.Link>
+                <Nav.Link href={renderHREF("/blog")} className="last">
+                  Blog
                 </Nav.Link>
               </Navbar.Collapse>
             </>

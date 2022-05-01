@@ -33,10 +33,9 @@ const Simulators: React.FC = () => {
               <SimulatorPanel
                 title={t("simulator.what-is-your-value")}
                 taxValue={1.59}
+                type="saque-aniversario"
               />
-              <GreenButton onClick={() => console.log("vai porco")}>
-                AVANÇAR
-              </GreenButton>
+              <GreenButton onClick={() => console.log("")}>AVANÇAR</GreenButton>
               <p className="sub-title">
                 *Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa
                 aqui.
@@ -59,6 +58,7 @@ const Simulators: React.FC = () => {
             <SimulatorPanel
               title={t("De quanto você precisa?")}
               taxValue={1.59}
+              type="pessoal"
             />
             <SignUpMolecule numInstallments={[80, 70, 60]}></SignUpMolecule>
             <div className="second-sub-title">

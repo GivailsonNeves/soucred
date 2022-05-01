@@ -1,21 +1,31 @@
 import { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
 import celphone from "../,,/../../../assets/images/maopequena.png";
 import MoneyField from "../../atoms/money-field";
-import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import GroupButton from "../../molecules/group-button";
+import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 import "./styles.scss";
 
-const SimulateLoan: React.FC = () => {
-  const [t] = useTranslation();
+export interface SimulateLoanProps {
+  type: string;
+  call: string;
+  subCall?: string;
+  taxValue?: number;
+}
+
+const SimulateLoan: React.FC<SimulateLoanProps> = ({
+  call,
+  taxValue,
+  subCall,
+  type,
+}) => {
   const [step, setStep] = useState<number>(0);
   return (
     <section className="simulate-loan" id="simulate-loan">
       <Container>
         <div className="statement">
-          <h2>Faça uma simulação do valor e aproveite as vantagens:</h2>
+          <h2>{call}</h2>
           <div>
             <p>√ Pague em até 80x no boleto.</p>
             <p>√ Sem valor mínimo das parcelas.</p>
@@ -29,16 +39,22 @@ const SimulateLoan: React.FC = () => {
         {step === 0 && (
           <div className="firt-tab">
             <div className="cardSimulator">
-              <SimulatorPanel title="De quanto você precisa?" taxValue={2.14} />
+              <SimulatorPanel
+                title="De quanto você precisa?"
+                taxValue={taxValue || 0}
+                type={type}
+              />
             </div>
             <SignUpMolecule
               onSignup={() => setStep(1)}
               numInstallments={[80, 70, 60]}
             ></SignUpMolecule>
-            <div className="base-sub-title">
-              <p>Essas parcelas podem ser ainda melhores.</p>
-              <p>Envie seus documentos e faça sua simulação personalizada.</p>
-            </div>
+            {subCall && (
+              <div
+                className="base-sub-title"
+                dangerouslySetInnerHTML={{ __html: subCall }}
+              />
+            )}
           </div>
         )}
 

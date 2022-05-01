@@ -6,6 +6,7 @@ import "./styles.scss";
 export interface SimulatorPanelProps {
   title: string;
   taxValue: number;
+  type: string;
 }
 
 const SimulatorPanel: React.FC<SimulatorPanelProps> = ({ title, taxValue }) => {

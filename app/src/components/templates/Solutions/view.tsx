@@ -37,7 +37,7 @@ function Solutions() {
             <Row>
               <Col xs={12} md={6}>
                 <InfoCard
-                  link="/lootfgts"
+                  link="/saque-fgts"
                   title="Saque-aniversário FGTS"
                   middle="Quer antecipar seu saque-aniversário do FGTS?"
                   secondMiddle="Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
@@ -47,7 +47,7 @@ function Solutions() {
               </Col>
               <Col xs={12} md={6}>
                 <InfoCard
-                  link="/dosimulation"
+                  link="/credito/consignado"
                   title="Crédito consignado "
                   miniTitle="(aposentados e pensionistas)"
                   middle="Crédito rápido e superseguro para ambos os lados, descontando a prestação diretamente de seu salário/INSS."
@@ -63,6 +63,7 @@ function Solutions() {
               </Col>
               <Col xs={12} sm={6} md={4}>
                 <InfoCard
+                  link="/credito/pessoal"
                   title="Crédito pessoal"
                   middle="Seja para investir, pagar dívidas, ou para viajar, nós estamos com você nessa jornada. Faça uma simulação do valor e aproveite as vantagens:"
                   data={myArray}
@@ -71,7 +72,8 @@ function Solutions() {
               </Col>
               <Col xs={12} md={4}>
                 <InfoCard
-                  title="Financiamentos "
+                  title="Financiamentos"
+                  link="/credito/financiamento"
                   miniTitle="(imóveis e veículos)"
                   middle="Casa ou carro? Seja qual for o seu sonho, estamos aqui para te ajudar com o financiamento da maneira mais rápida para você dar início a esse investimento."
                 ></InfoCard>

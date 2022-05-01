@@ -5,7 +5,6 @@ export interface SubHeaderMoleculeProps {
   title: string;
   subTitle?: string;
   subTitle2?: string;
-  baseTitle?: string;
   picture?: string;
 }
 
@@ -13,15 +12,14 @@ const SubHeaderMolecule: React.FC<SubHeaderMoleculeProps> = ({
   title,
   subTitle,
   subTitle2,
-  baseTitle,
   picture,
 }) => {
   return (
     <div className="sub-header-molecule">
       <div>
         <h1>{title}</h1>
-        <p>{subTitle}</p>
-        <p>{subTitle2}</p>
+        {subTitle && <p>{subTitle}</p>}
+        {subTitle2 && <p>{subTitle2}</p>}
       </div>
       <img src={picture} alt="" />
     </div>
