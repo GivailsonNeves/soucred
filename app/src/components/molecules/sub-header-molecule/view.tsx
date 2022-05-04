@@ -1,3 +1,4 @@
+import GreenButton from "../greenButton/view";
 import "./styles.scss";
 
 export interface SubHeaderMoleculeProps {
@@ -20,6 +21,13 @@ const SubHeaderMolecule: React.FC<SubHeaderMoleculeProps> = ({
         <h1>{title}</h1>
         {subTitle && <p>{subTitle}</p>}
         {subTitle2 && <p>{subTitle2}</p>}
+        <GreenButton
+          target="_blank"
+          style={{ maxWidth: 250 }}
+          href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
+        >
+          CHAMA NO ZAP
+        </GreenButton>
       </div>
       <img src={picture} alt="" />
     </div>

@@ -18,14 +18,14 @@ $color: #03ea6d;
       flex-direction: column;
       margin-top: 50px;
       h2 {
-        font-family: "Amaranth";
+        font-family: "MontSerrart";
         font-style: italic;
         font-weight: bold;
         text-align: left;
         margin-bottom: 30px;
       }
       div {
-        margin-left: 30px;
+        // margin-left: 30px;
         p {
           font-family: "Montserrat";
           font-weight: bold;
@@ -35,6 +35,9 @@ $color: #03ea6d;
         }
       }
       @media screen and (min-width: 992px) {
+        div {
+          margin-left: 30px;
+        }
         flex-direction: row;
         h2 {
           max-width: 450px;
@@ -149,7 +152,7 @@ $color: #03ea6d;
             margin: 50px auto;
             background: white;
             width: 288px;
-            height: 56px;
+            height: 46px;
             border: 2px solid #ffffff;
             border-radius: 28px;
             color: #283950;

@@ -9,11 +9,13 @@
     & > div {
       padding: 30px;
       @media screen and (min-width: 992px) {
-        padding: 130px 0 60px 230px;
+        padding: 30px 0 60px 230px;
       }
       .titles-componte {
         h2 {
           max-width: 750px;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
         }
       }
       div:first-child {
@@ -52,7 +54,7 @@
             text-align: center;
             color: #283950;
             margin-top: 20px;
-            font: normal normal medium Montserrat;
+            font-family: "Montserrat", sans-serif;
           }
         }
         @media screen and (max-width: 768px) {
@@ -75,7 +77,7 @@
           max-width: 560px;
           color: #283950;
           font-weight: bold;
-          font: normal normal bold Montserrat;
+          font-family: "Montserrat", sans-serif;
         }
       }
       .green-button {

@@ -18,7 +18,7 @@ const SubHeaderSimulation: React.FC<SubHeaderSimulationProps> = ({
         <SubHeaderMolecule
           title={title}
           subTitle={subTitle}
-          subTitle2="Chama no Zap."
+          subTitle2=""
           picture={base}
         ></SubHeaderMolecule>
       </Container>

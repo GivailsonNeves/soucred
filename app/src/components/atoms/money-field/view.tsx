@@ -40,7 +40,7 @@ const MoneyField: React.FC<MoneyFieldProps> = ({
   return (
     <div className="money-field">
       <div>
-        <Button onClick={() => hdlValue(-1)}>
+        <Button onClick={() => hdlValue(-200)}>
           <span>-</span>
         </Button>
       </div>
@@ -52,7 +52,7 @@ const MoneyField: React.FC<MoneyFieldProps> = ({
         />
       )}
       <div>
-        <Button onClick={() => hdlValue(+1)}>
+        <Button onClick={() => hdlValue(+200)}>
           <span>+</span>
         </Button>
       </div>
