@@ -5,10 +5,10 @@
     .cardSimulator {
       justify-content: center;
       max-width: 818px;
-
       display: flex;
       align-items: center;
       margin: auto;
+      margin-top: 50px;
       flex-direction: column;
       justify-content: space-evenly;
       .sub-title {
@@ -26,6 +26,9 @@
         margin: auto;
         flex-direction: column;
         justify-content: space-evenly;
+      }
+      a {
+        color: rgb(33, 37, 41);
       }
     }
   }

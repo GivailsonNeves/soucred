@@ -7,6 +7,8 @@ import "./styles.scss";
 
 export interface DoSimulationViewProps {
   type?: string;
+  times?: string;
+  value?: string;
 }
 
 export interface TypeCredit {
@@ -46,12 +48,12 @@ const typeCredits: { [type: string]: TypeCredit } = {
 const DoSimulation: React.FC<DoSimulationViewProps> = ({ type = "nenhum" }) => {
   const { title, subTitle, ...propsSimulator } = typeCredits[type];
   return (
-    <>
+    <div className="doSimulation">
       <Header offset={0} />
       <SubHeaderSimulation title={title} subTitle={subTitle} />
       <SimulateLoan {...propsSimulator} />
       <Footer />
-    </>
+    </div>
   );
 };
 

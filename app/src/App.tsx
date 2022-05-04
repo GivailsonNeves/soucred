@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { connect } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Blog from "./pages/Blog";
@@ -34,10 +35,16 @@ const App: React.FC<AppProps> = ({ initAll }) => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/saque-fgts">
+        <Route exact path="/saque-fgts">
           <LootFgts />
         </Route>
-        <Route path="/credito">
+        <Route exact path="/saque-fgts/:value">
+          <LootFgts />
+        </Route>
+        <Route path="/credito/:type">
+          <DoSimulation />
+        </Route>
+        <Route path="/credito/:type/:times/:value">
           <DoSimulation />
         </Route>
         <Route exact path="/blog">
@@ -59,18 +66,17 @@ const App: React.FC<AppProps> = ({ initAll }) => {
 };
 
 const mapDispatch = (dispatch: Dispatch) => ({
-  initAll: async () =>
-    Promise.all([
-      dispatch.socialLinks.getAsync(),
-      dispatch.about.getAsync(),
-      dispatch.team.getAsync(),
-      dispatch.about.getAsync(),
-      dispatch.office.getAsync(),
-      dispatch.contact.getAsync(),
-      dispatch.address.getAsync(),
-      dispatch.actions.getAsync(),
-    ]),
+  initAll: async () => {},
+  // Promise.all([
+  //   dispatch.socialLinks.getAsync(),
+  //   dispatch.about.getAsync(),
+  //   dispatch.team.getAsync(),
+  //   dispatch.about.getAsync(),
+  //   dispatch.office.getAsync(),
+  //   dispatch.contact.getAsync(),
+  //   dispatch.address.getAsync(),
+  //   dispatch.actions.getAsync(),
+  // ]),
 });
 
-// export default connect(null, mapDispatch)(App);
-export default App;
+export default connect(null, mapDispatch)(App);

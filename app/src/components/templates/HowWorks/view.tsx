@@ -70,7 +70,7 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
           </div>
           <GreenButton
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=+5561996517829"
+            href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
           >
             CHAMA NO ZAP
           </GreenButton>

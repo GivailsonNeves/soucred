@@ -1,10 +1,10 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import DoSimulation from "./view";
 
 const DoSimulationContext: React.FC = () => {
-  const location = useLocation();
+  const params = useParams<any>();
 
-  return <DoSimulation type={location.pathname.substring(9)} />;
+  return <DoSimulation {...params} />;
 };
 
 export default DoSimulationContext;

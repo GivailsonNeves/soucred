@@ -3,6 +3,8 @@ $color: #03ea6d;
 .money-field {
   display: flex;
   margin-top: 62px;
+  align-items: center;
+  justify-content: center;
   button {
     width: 54px;
     height: 54px;
@@ -23,9 +25,10 @@ $color: #03ea6d;
     }
   }
   input {
+    flex: 1;
     border: none;
     border-bottom: 1px #ccc solid;
-    width: 140px;
+    min-width: 140px;
     font-size: 28px;
     text-align: center;
     font-weight: bold;
@@ -34,11 +37,32 @@ $color: #03ea6d;
     button {
       width: 69px;
       height: 69px;
-      font-size: 74px;
+      font-size: 69px;
+      line-height: 69px;
+      position: relative;
+      span {
+        position: absolute;
+        top: -5px;
+      }
     }
     input {
-      width: 240px;
+      min-width: 240px;
       font-size: 38px;
+    }
+  }
+  .money-input {
+    margin: 0 15px;
+    .reactMoneyInputGroupAppend {
+      display: none;
+    }
+    .reactMoneyInputGroupPrepend {
+      span {
+        font-family: "Montserrat";
+        background: 0 none;
+        border: 0 none;
+        font-weight: bold;
+        font-size: 20px;
+      }
     }
   }
 }

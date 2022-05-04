@@ -46,8 +46,10 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
               />
             </div>
             <SignUpMolecule
+              parcelValue="0,00"
               onSignup={() => setStep(1)}
-              numInstallments={[80, 70, 60]}
+              value={12}
+              numInstallments={[80, 70, 60, 40, 36, 24, 12]}
             ></SignUpMolecule>
             {subCall && (
               <div
@@ -133,7 +135,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
         {step === 2 && (
           <div className="third-tab">
             <div className="container">
-              <img src={celphone} />
+              <img src={celphone} alt="Telefone" />
               <div className="tanks">
                 <p>
                   Obrigado por enviar seus documentos! Entraremos em contato

@@ -1,22 +1,61 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+//@ts-ignore
+import ReactMoneyComponent from "react-currency-input-mask";
 
 import "./styles.scss";
 
-const MoneyField: React.FC = () => {
-  const [value, setValue] = useState<number>(0);
+export interface MoneyFieldProps {
+  onChangeValue?: (value: any) => void;
+  defaultValue?: any;
+}
 
+const MoneyField: React.FC<MoneyFieldProps> = ({
+  onChangeValue,
+  defaultValue,
+}) => {
+  const [value, setValue] = useState<any>(defaultValue || 0);
+  const [busy, setBusy] = useState(false);
+  const config = {
+    prefix: "R$",
+    suffix: "%",
+    precision: 2,
+    className: "money-input",
+    decimalSeparator: ",",
+  };
+
+  const hdlValue = (newValue: any) => {
+    const oldValueArr = value.toString().split(",");
+    const newOne = `${parseInt(oldValueArr[0]) + newValue}.${oldValueArr[1]}`;
+    setBusy(true);
+    setValue(parseFloat(newOne));
+    setTimeout(() => {
+      setBusy(false);
+    }, 0);
+  };
+  const onChange = (value: any) => {
+    setValue(value);
+    if (onChangeValue) onChangeValue(value);
+  };
   return (
     <div className="money-field">
-      <Button onClick={() => setValue((value) => Math.max(value - 1, 0))}>
-        -
-      </Button>
-      <input
-        value={value.toString()}
-        onChange={(event) => setValue(parseInt(event.target?.value || "0"))}
-        type="tel"
-      />
-      <Button onClick={() => setValue((value) => value + 1)}>+</Button>
+      <div>
+        <Button onClick={() => hdlValue(-1)}>
+          <span>-</span>
+        </Button>
+      </div>
+      {!busy && (
+        <ReactMoneyComponent
+          value={value}
+          config={config}
+          onChange={onChange}
+        />
+      )}
+      <div>
+        <Button onClick={() => hdlValue(+1)}>
+          <span>+</span>
+        </Button>
+      </div>
     </div>
   );
 };

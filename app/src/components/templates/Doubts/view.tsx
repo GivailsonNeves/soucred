@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
-import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import GreenButton from "../../molecules/greenButton/view";
-import { Link, useLocation } from "react-router-dom";
-
-import "./styles.scss";
-
 import celPhone from "../,,/../../../assets/images/mockup_celular.png";
+import GreenButton from "../../molecules/greenButton/view";
+import "./styles.scss";
 
 interface DoubtsProps {
   showNavigation?: boolean;
@@ -28,7 +24,7 @@ function Doubts({ showNavigation = true }: DoubtsProps) {
           <div>
             <GreenButton
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=+5561996517829"
+              href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
             >
               CHAMA NO ZAP
             </GreenButton>

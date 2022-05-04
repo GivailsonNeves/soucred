@@ -1,14 +1,11 @@
 import { Container } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
 
 import "./styles.scss";
 
-import base from "../,,/../../../assets/images/base.png";
+import base from "../../../assets/images/base.png";
 import SubHeaderMolecule from "../../molecules/sub-header-molecule/view";
 
-function SubHeader() {
-  const [t] = useTranslation();
-
+const SubHeader: React.FC = () => {
   return (
     <section className="sub-header" id="sub-header">
       <Container>
@@ -21,6 +18,6 @@ function SubHeader() {
       </Container>
     </section>
   );
-}
+};
 
 export default SubHeader;

@@ -17,26 +17,8 @@
     }
   }
   .cardSimulator {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 40px #00000019;
-    border: 1px solid #03ea6d;
-    border-radius: 22px;
-    display: flex;
-    align-items: center;
-    margin: 0 35px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    .green-button {
-      margin-top: 10px !important;
-      margin-bottom: 60px !important;
-      max-width: 242px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      margin: auto;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
+    max-width: 80%;
+    margin: 0 auto;
   }
   .sub-title {
     margin-top: 20px auto 0;

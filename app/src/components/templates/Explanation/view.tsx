@@ -1,22 +1,17 @@
 import { Container } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
-import Explication from "../../molecules/explication/view";
-import GreenButton from "../../molecules/greenButton/view";
-
-import "./styles.scss";
-
-import interrogation from "../,,/../../../assets/images/Grupo_45.png";
 import person from "../,,/../../../assets/images/Caminho32.png";
 import plus from "../,,/../../../assets/images/Grupo46.png";
+import interrogation from "../,,/../../../assets/images/Grupo_45.png";
 import celphone from "../,,/../../../assets/images/maopequena.png";
+import Explication from "../../molecules/explication/view";
+import GreenButton from "../../molecules/greenButton/view";
+import "./styles.scss";
 
 interface ExplanationProps {
   showNavigation?: boolean;
 }
 
 function Explanation({ showNavigation = true }: ExplanationProps) {
-  const [t] = useTranslation();
-
   return (
     <section className="explanation" id="explanation">
       <Container>
@@ -70,10 +65,10 @@ function Explanation({ showNavigation = true }: ExplanationProps) {
 
         <div className="explanation-footer">
           <div>
-            <img src={celphone} />
+            <img src={celphone} alt="telefone" />
             <GreenButton
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=+5561996517829"
+              href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
             >
               CHAMA NO ZAP
             </GreenButton>

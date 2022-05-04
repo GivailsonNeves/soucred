@@ -241,8 +241,9 @@ $color: #03ea6d;
       }
     }
     .cardSimulator {
-      width: 400px;
-      margin: auto;
+      width: 100%;
+      max-width: 600px;
+      margin: 40px auto;
     }
     .base-sub-title {
       text-align: center;

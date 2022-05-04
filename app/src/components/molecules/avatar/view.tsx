@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-
 import "./styles.scss";
 
 export type AvatarProps = {
@@ -9,23 +7,17 @@ export type AvatarProps = {
   job: string;
 };
 
-const Avatar: React.FC<AvatarProps> = ({
-  avatarImage,
-  date,
-  name,
-  job,
-}) => {
-
-  const [_, i18n] = useTranslation();
-
+const Avatar: React.FC<AvatarProps> = ({ avatarImage, date, name, job }) => {
   return (
     <div className="avatar">
-      <img src={avatarImage} />
+      <img src={avatarImage} alt="" />
       <div>
         <p>{date}</p>
-        <p>Por <b>{name}</b> | {job}</p>
+        <p>
+          Por <b>{name}</b> | {job}
+        </p>
       </div>
-    </div >
+    </div>
   );
 };
 export default Avatar;

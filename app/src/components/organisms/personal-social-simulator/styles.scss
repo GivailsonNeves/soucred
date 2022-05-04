@@ -1,0 +1,15 @@
+.PersonalSocialSimulator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > .btn-group {
+    min-width: 70%;
+    button {
+      &:hover,
+      &.active {
+        background-color: #03ea6d !important;
+        color: white !important;
+      }
+    }
+  }
+}

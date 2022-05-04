@@ -1,18 +1,11 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import celPhone from "../../../assets/images/mockup_mao.png";
 import InfoCard from "../../molecules/info-card";
 import Titles from "../../molecules/titles/view";
-
 import "./styles.scss";
 
-import celPhone from "../,,/../../../assets/images/mockup_mao.png";
-import { Link } from "react-router-dom";
-
-interface SolutionsProps {
-  showNavigation?: boolean;
-}
-
-function Solutions() {
+const Solutions: React.FC = () => {
   const [t] = useTranslation();
   const myArray = [
     "√ Pague em até 80x no boleto.",
@@ -84,6 +77,6 @@ function Solutions() {
       </Container>
     </section>
   );
-}
+};
 
 export default Solutions;

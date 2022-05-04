@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { UtilsNavigator } from "../../../utils";
 import GreenButton from "../greenButton/view";
@@ -22,8 +21,6 @@ const InfoCard: React.FC<InfoCardProps> = ({
   data,
   link,
 }) => {
-  const [_, i18n] = useTranslation();
-
   return (
     <div className="info-card">
       {link ? (
@@ -42,7 +39,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
       <div className="controls">
         <GreenButton
           target="_blank"
-          href="https://api.whatsapp.com/send?phone=+5561996517829"
+          href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
         >
           CHAMA NO ZAP
         </GreenButton>
