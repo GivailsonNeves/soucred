@@ -47,11 +47,15 @@ const PersonalSocialSimulator: React.FC = () => {
     if (parceltimes < 1 || currentTax <= 0) {
       return "0,00";
     }
-    const floatValue =
-      (parseFloat(simulatorValue.replace(",", ".")) / parceltimes) * currentTax;
-    return isNaN(floatValue)
-      ? "0,00"
-      : floatValue.toFixed(2).toString().replace(".", ",");
+    const floatValue = isNaN(parseFloat(simulatorValue.replace(",", ".")))
+      ? 0
+      : parseFloat(simulatorValue.replace(",", "."));
+    const parcelValue =
+      floatValue / parceltimes +
+      ((currentTax / 100) * parceltimes * floatValue) / parceltimes;
+    return !isNaN(parcelValue)
+      ? parcelValue.toFixed(2).toString().replace(".", ",")
+      : "0,00";
   }, [simulatorValue, parceltimes, currentTax]);
 
   return (

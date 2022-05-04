@@ -27,7 +27,9 @@ const SignUpMolecule: React.FC<SignUpMoleculeProps> = ({
           value={value}
           max={80}
           min={1}
-          onChange={(event: any) => hdlOnChangeParcel(event.target.value)}
+          onChange={(event: any) =>
+            hdlOnChangeParcel(parseInt(event.target.value))
+          }
         />
         <div className="last-p">
           <p>parcelas de</p>
