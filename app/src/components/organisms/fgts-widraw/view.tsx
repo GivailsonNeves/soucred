@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
+import { UtilsNavigator } from "../../../utils";
 import GreenButton from "../../molecules/greenButton/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 
@@ -14,6 +15,7 @@ const FgtsWidraw: React.FC<FgtsWidrawProps> = () => {
 
   const handleFoward = () => {
     history.push(`/saque-fgts/${value}`);
+    UtilsNavigator.gotoTop();
   };
 
   return (

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { TypeCredit } from "../../../pages/DoSimulation/view";
+import { UtilsNavigator } from "../../../utils";
 import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 
@@ -77,9 +78,12 @@ const PersonalSocialSimulator: React.FC = () => {
         numInstallments={[80, 70, 60, 40, 36, 24, 12]}
         onParcelChange={setParceltimes}
         value={parceltimes}
-        onSignup={() =>
-          history.push(`credito/${creditType}/${parceltimes}/${simulatorValue}`)
-        }
+        onSignup={() => {
+          history.push(
+            `credito/${creditType}/${parceltimes}/${simulatorValue}`
+          );
+          UtilsNavigator.gotoTop();
+        }}
       ></SignUpMolecule>
       <div className="second-sub-title">
         <p>Essas parcelas podem ser ainda melhores.</p>
