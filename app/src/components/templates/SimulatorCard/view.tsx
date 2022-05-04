@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { useHistory } from "react-router-dom";
 import GreenButton from "../../molecules/greenButton/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
 import "./styles.scss";
@@ -10,13 +11,14 @@ export interface SimulatorCardProps {
 
 const SimulatorCard: React.FC<SimulatorCardProps> = ({ value }) => {
   const [t] = useTranslation();
+  const history = useHistory();
   return (
     <section className="simulator-card" id="simulator-card">
       <Container>
         <div className="cardSimulator">
           <SimulatorPanel
             title={t("simulator.what-is-your-value")}
-            taxValue={1.59}
+            taxValue={1.69}
             type="saque-aniversario"
             defaultValue={value}
           />
@@ -30,11 +32,8 @@ const SimulatorCard: React.FC<SimulatorCardProps> = ({ value }) => {
             </a>
             .
           </p>
-          <GreenButton
-            target="_blank"
-            href={`https://api.whatsapp.com/send?phone=+5561996517829&text=Olá, gostaria de obter informações sobre o Saque-aniversário do FGTS no valor dê R$ ${value}`}
-          >
-            CHAMA NO ZAP
+          <GreenButton onClick={() => history.push("/credito/fgts")}>
+            AVANÇAR
           </GreenButton>
         </div>
       </Container>

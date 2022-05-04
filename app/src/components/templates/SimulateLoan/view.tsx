@@ -5,7 +5,9 @@ import MoneyField from "../../atoms/money-field";
 import GroupButton from "../../molecules/group-button";
 import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
+import InputMask from "react-input-mask";
 import "./styles.scss";
+import { UtilsNavigator } from "../../../utils";
 
 export interface SimulateLoanProps {
   type: string;
@@ -21,20 +23,28 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   type,
 }) => {
   const [step, setStep] = useState<number>(0);
+  const [busy, setBusy] = useState<boolean>(false);
   return (
     <section className="simulate-loan" id="simulate-loan">
       <Container>
         <div className="statement">
           <h2>{call}</h2>
           <div>
-            <p>√ Pague em até 80x no boleto.</p>
-            <p>√ Sem valor mínimo das parcelas.</p>
-            <p>√ 30 dias para começar a pagar.</p>
-            <p>√ Melhores taxas do mercado.</p>
-            <p>√ Dinheiro na conta em até 48h.</p>
+            {type !== "fgts" && (
+              <>
+                <p>√ Pague em até 80x no boleto.</p>
+                <p>√ Sem valor mínimo das parcelas.</p>
+                <p>√ 30 dias para começar a pagar.</p>
+                <p>√ Melhores taxas do mercado.</p>
+                <p>√ Dinheiro na conta em até 48h.</p>
+              </>
+            )}
           </div>
         </div>
-        <GroupButton step={step} onStepSelect={setStep} />
+        <GroupButton
+          step={step}
+          onStepSelect={(step) => setStep(Math.min(step, 1))}
+        />
 
         {step === 0 && (
           <div className="firt-tab">
@@ -49,7 +59,6 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
               parcelValue="0,00"
               onSignup={() => setStep(1)}
               value={12}
-              numInstallments={[80, 70, 60, 40, 36, 24, 12]}
             ></SignUpMolecule>
             {subCall && (
               <div
@@ -75,7 +84,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                 controlId="whatapp"
               >
                 <Form.Label>Seu WhatsApp:</Form.Label>
-                <Form.Control type="tel" />
+                <InputMask className="whatsapp-number" mask="99999-9999" />
               </Form.Group>
               <Form.Group
                 className="input-field input-field-three sm"
@@ -103,29 +112,54 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                 controlId="email"
               >
                 <Form.Label>Comprovante de renda</Form.Label>
-                <Button>ANEXAR</Button>
+                <label className="file-input">
+                  ANEXAR <input type="file" />
+                </label>
               </Form.Group>
               <Form.Group
                 className="input-field input-field-seven sm"
                 controlId="email"
               >
                 <Form.Label>Comprovante de residência</Form.Label>
-                <Button>ANEXAR</Button>
+                <label className="file-input">
+                  ANEXAR <input type="file" />
+                </label>
               </Form.Group>
               <Form.Group
                 className="input-field input-field-eight sm"
                 controlId="email"
               >
                 <Form.Label>Comprovante de residência</Form.Label>
-                <Button>ANEXAR</Button>
+                <label className="file-input">
+                  ANEXAR <input type="file" />
+                </label>
+              </Form.Group>
+              <Form.Group
+                className="input-field input-field-eight sm"
+                controlId="email"
+              >
+                <Form.Label>
+                  Documento de identificação <small>(RG ou CNH)</small>
+                </Form.Label>
+                <label className="file-input">
+                  ANEXAR <input type="file" />
+                </label>
               </Form.Group>
               <div className="send-container">
                 <Button
                   type="button"
                   className="send"
-                  onClick={() => setStep(2)}
+                  disabled={busy}
+                  onClick={() => {
+                    setBusy(true);
+                    setTimeout(() => {
+                      setBusy(false);
+                      setStep(2);
+                      UtilsNavigator.gotoTop();
+                    }, 2000);
+                  }}
                 >
-                  ENVIAR
+                  {!busy ? "ENVIAR" : "AGUARDE"}
                 </Button>
               </div>
             </Form>

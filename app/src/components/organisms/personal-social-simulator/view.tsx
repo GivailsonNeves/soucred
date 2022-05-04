@@ -44,6 +44,9 @@ const PersonalSocialSimulator: React.FC = () => {
   }, [creditType]);
 
   const parcelValue = useMemo(() => {
+    if (parceltimes < 1 || currentTax <= 0) {
+      return "0,00";
+    }
     const floatValue =
       (parseFloat(simulatorValue.replace(",", ".")) / parceltimes) * currentTax;
     return isNaN(floatValue)
@@ -75,7 +78,6 @@ const PersonalSocialSimulator: React.FC = () => {
       />
       <SignUpMolecule
         parcelValue={parcelValue}
-        numInstallments={[80, 70, 60, 40, 36, 24, 12]}
         onParcelChange={setParceltimes}
         value={parceltimes}
         onSignup={() => {

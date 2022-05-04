@@ -12,20 +12,15 @@
   @media screen and (min-width: 782px) {
     flex-direction: row;
   }
-  .dropdown {
-    width: 120px;
-    height: 71px;
-    border: 0px;
+  input {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
     border-radius: 8px;
-    font-size: 1.9em;
-    margin: 0 auto;
-    button {
-      background-color: #283950;
-      color: white;
-      border: 1px solid #ffffff;
-      border-radius: 8px !important;
-      border-color: white;
-    }
+    color: white;
+    background: #283950;
+    font-size: 36px;
+    border: 2px white solid;
   }
   .last-p {
     margin: 0 20px;

@@ -3,7 +3,6 @@ import GreenButton from "../greenButton/view";
 import "./styles.scss";
 
 export interface SignUpMoleculeProps {
-  numInstallments?: number[];
   onSignup?: () => void;
   onParcelChange?: (value: number) => void;
   parcelValue: string;
@@ -11,27 +10,26 @@ export interface SignUpMoleculeProps {
 }
 
 const SignUpMolecule: React.FC<SignUpMoleculeProps> = ({
-  numInstallments,
   onSignup,
   parcelValue,
   value = 1,
   onParcelChange,
 }) => {
+  const hdlOnChangeParcel = (value: number) => {
+    if (onParcelChange) {
+      onParcelChange(value);
+    }
+  };
   return (
     <>
       <div className="sign-up-molecule">
-        <DropdownButton as={ButtonGroup} title={value} id="bg-nested-dropdown">
-          {numInstallments &&
-            numInstallments.map((num, index) => (
-              <Dropdown.Item
-                eventKey={index}
-                key={index}
-                onClick={() => onParcelChange && onParcelChange(num)}
-              >
-                {num}
-              </Dropdown.Item>
-            ))}
-        </DropdownButton>
+        <input
+          type="number"
+          value={value}
+          max={80}
+          min={1}
+          onChange={(event: any) => hdlOnChangeParcel(event.target.value)}
+        />
         <div className="last-p">
           <p>parcelas de</p>
           <p>R$ {parcelValue}</p>

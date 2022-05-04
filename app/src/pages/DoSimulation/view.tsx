@@ -43,6 +43,13 @@ const typeCredits: { [type: string]: TypeCredit } = {
     subCall:
       "Essas parcelas podem ser ainda melhores.<br/>Envie seus documentos e faça sua simulação personalizada",
   },
+  fgts: {
+    type: "fgts",
+    title: "Saque-aniversário do FGTS",
+    taxValue: 1.69,
+    call: "Que tal ter dinheiro agora sem comprometer sua renda mensal? Faça uma simulação de quanto você pode liberar no seu FGTS.",
+    subCall: "Envie seus documentos e faça sua simulação personalizada",
+  },
 };
 
 const DoSimulation: React.FC<DoSimulationViewProps> = ({ type = "nenhum" }) => {

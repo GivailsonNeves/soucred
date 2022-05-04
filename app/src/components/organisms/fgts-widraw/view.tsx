@@ -22,7 +22,7 @@ const FgtsWidraw: React.FC<FgtsWidrawProps> = () => {
     <div className="cardSimulator">
       <SimulatorPanel
         title={t("simulator.what-is-your-value")}
-        taxValue={1.59}
+        taxValue={1.69}
         type="saque-aniversario"
         onValueChange={setValue}
       />

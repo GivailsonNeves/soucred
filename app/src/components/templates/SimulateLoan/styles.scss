@@ -1,17 +1,28 @@
 $color: #03ea6d;
-
+.whatsapp-number {
+  font-size: 2em;
+  font-family: "Montserrat";
+  width: 100%;
+  background: none;
+  border-top: 0 none;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-bottom: 1px solid #000000;
+}
 .simulate-loan {
   .container {
     margin: 0 auto;
     .statement {
       display: flex;
       justify-content: space-around;
+      flex-direction: column;
       margin-top: 50px;
       h2 {
         font-family: "Amaranth";
         font-style: italic;
         font-weight: bold;
-        width: 450px;
+        text-align: left;
+        margin-bottom: 30px;
       }
       div {
         margin-left: 30px;
@@ -20,183 +31,122 @@ $color: #03ea6d;
           font-weight: bold;
           font-size: 1.3em;
           margin: 0;
+          text-align: center;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        flex-direction: row;
+        h2 {
+          max-width: 450px;
+        }
+        p {
+          text-align: left;
         }
       }
     }
     .firt-tab {
       margin-bottom: 50px;
     }
+
     .second-tab {
       margin-bottom: 50px;
       .form-data {
+        padding: 97px 97px 30px 97px;
         margin-top: 110px;
         background: #03ea6d 0% 0% no-repeat padding-box;
         box-shadow: 10px 20px 40px #00000034;
         border-radius: 22px;
+        button {
+          background: transparent;
+          border: 2px solid #ffffff;
+          &:hover {
+            background-color: darken($color, 10%);
+          }
+        }
+
         .input-field {
-          display: inline-flex;
-          align-items: center;
-          width: 100%;
+          display: flex;
+
+          margin-bottom: 30px;
+          flex-direction: column;
+
+          .money-field {
+            margin-top: 0;
+            max-width: 400px;
+            margin-top: 20px;
+            button {
+              width: 45px;
+              height: 45px;
+              font-size: 45px;
+              line-height: 45px;
+            }
+            input {
+              text-align: center;
+            }
+          }
+          .form-control {
+            flex: 1;
+          }
+          .file-input {
+            display: inline-block;
+            border-radius: 25px;
+            background: transparent;
+            margin-top: 20px;
+            border: 2px solid #ffffff;
+            padding: 5px 35px;
+            font-weight: bold;
+            font-family: "Montserrat";
+            cursor: pointer;
+            text-align: center;
+            max-width: 200px;
+            input {
+              display: none;
+            }
+          }
           .form-label {
+            display: block;
             text-align: left;
-            font: normal normal normal 2em Montserrat;
-            letter-spacing: 0px;
+            margin-bottom: 0 !important;
+
+            margin-right: 20px;
+            font-size: 2em;
+            font-family: "Montserrat";
             color: #283950;
           }
-          .form-control {
-            background-color: rgba(127, 17, 224, 0);
-            font: normal normal normal 2em Montserrat;
-            border: none;
-            border-bottom: 1px solid #000000;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            border-radius: 0;
-            & > :focus {
-              -webkit-box-shadow: none;
-              box-shadow: none;
-            }
-          }
-        }
-        .input-field-one {
-          padding: 97px 97px 30px 97px;
-          .form-label {
-            width: 200px;
-          }
-          .form-control {
-            width: 990px;
-          }
-        }
-        .input-field-two {
-          padding: 0 97px 30px 97px;
-          .form-label {
-            width: 280px;
-          }
-          .form-control {
-            width: 910px;
-          }
-        }
-        .input-field-three {
-          padding: 0 97px 30px 97px;
-          .form-label {
-            width: 280px;
-          }
-          .form-control {
-            width: 910px;
-          }
-        }
-        .input-field-four {
-          padding: 0 97px 30px 97px;
-          .form-label {
-            width: 370px;
-          }
-          .money-field {
-            margin: 0;
-            width: 730px;
-            margin-left: 30px;
-            display: flex;
-            justify-content: space-between;
+          @media screen and (min-width: 992px) {
             flex-direction: row;
-            align-items: center;
-            button {
-              width: 50px;
-              height: 50px;
-              background-color: #03ea6d !important;
-              border: 2px solid #ffffff;
+            align-items: flex-end;
+            .form-label {
+              max-width: 50%;
             }
-            input {
-              width: 240px;
-              text-align: center;
-              background-color: rgba(127, 17, 224, 0);
-              font: normal normal normal 2em Montserrat;
-              border: none;
-              border-bottom: 1px solid #000000;
-              box-shadow: none;
-              border-radius: 0;
+            .file-input {
+              margin-top: 0;
+            }
+            .money-field {
+              max-width: 100%;
+              margin-top: 0;
             }
           }
         }
-        .input-field-five {
-          padding: 0 97px 30px 97px;
-          .form-label {
-            width: 850px;
-          }
-          .money-field {
-            margin: 0;
-            width: 730px;
-            margin-left: 30px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-            button {
-              width: 50px;
-              height: 50px;
-              background-color: #03ea6d !important;
-              border: 2px solid #ffffff;
-            }
-            input {
-              width: 240px;
-              text-align: center;
-              background-color: rgba(127, 17, 224, 0);
-              font: normal normal normal 2em Montserrat;
-              border: none;
-              border-bottom: 1px solid #000000;
-              box-shadow: none;
-              border-radius: 0;
-            }
-          }
-        }
-        .input-field-six {
-          padding: 0 97px 30px 97px;
-          button {
-            margin-left: 60px;
-            background: transparent;
-            width: 288px;
-            height: 56px;
-            border: 2px solid #ffffff;
-            border-radius: 28px;
-            color: #283950;
-            &:hover {
-              background-color: darken($color, 10%);
-            }
-          }
-        }
-        .input-field-seven {
-          padding: 0 97px 30px 97px;
-          button {
-            margin-left: 60px;
-            background: transparent;
-            width: 288px;
-            height: 56px;
-            border: 2px solid #ffffff;
-            border-radius: 28px;
-            color: #283950;
-            &:hover {
-              background-color: darken($color, 10%);
-            }
-          }
-        }
-        .input-field-eight {
-          padding: 0 97px 30px 97px;
-          button {
-            margin-left: 60px;
-            background: transparent;
-            width: 288px;
-            height: 56px;
-            border: 2px solid #ffffff;
-            border-radius: 28px;
-            color: #283950;
-            &:hover {
-              background-color: darken($color, 10%);
-            }
-          }
+
+        input {
+          text-align: center;
+          background-color: rgba(127, 17, 224, 0);
+          font-size: 2em;
+          font-family: "Montserrat";
+          border: none;
+          text-align: left;
+          border-bottom: 1px solid #000000;
+          box-shadow: none;
+          border-radius: 0;
+          margin-bottom: 0;
         }
         .send-container {
           width: 100%;
           display: flex;
           justify-content: center;
           .send {
-            margin: 99px auto 82px;
+            margin: 50px auto;
             background: white;
             width: 288px;
             height: 56px;
@@ -219,24 +169,35 @@ $color: #03ea6d;
       }
       img {
         margin-top: 26px;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         margin-left: -130px;
+        display: none;
       }
       .tanks {
-        width: 800px;
+        width: 100%;
         background: #ededed 0% 0% no-repeat padding-box;
         box-shadow: 10px 20px 40px #00000034;
         border-radius: 22px;
         z-index: -1;
         margin-left: -160px;
-        margin-top: 100px;
+        margin: 100px auto 0;
         p {
-          width: 430px;
+          max-width: 430px;
           font-weight: bold;
           font-style: italic;
           margin: 101px auto;
           font-size: 2.2em;
           line-height: 1;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        img {
+          display: inline-block;
+        }
+        .tanks {
+          margin: 0;
+          margin-left: -160px;
         }
       }
     }
