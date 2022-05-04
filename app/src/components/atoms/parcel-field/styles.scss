@@ -1,0 +1,53 @@
+$color: #03ea6d;
+
+.parcel-field {
+  display: flex;
+  margin-top: 62px;
+  align-items: center;
+  justify-content: center;
+  button {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #03ea6d;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+    &:active {
+      background-color: darken($color, 10%);
+    }
+  }
+  input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    min-width: 140px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 678px) {
+    button {
+      width: 69px;
+      height: 69px;
+      font-size: 69px;
+      line-height: 69px;
+      position: relative;
+      span {
+        position: absolute;
+        top: -5px;
+      }
+    }
+    input {
+      min-width: 240px;
+      font-size: 38px;
+    }
+  }
+}

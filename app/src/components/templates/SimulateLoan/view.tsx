@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import celphone from "../,,/../../../assets/images/maopequena.png";
 import MoneyField from "../../atoms/money-field";
+import ParcelField from "../../atoms/parcel-field";
 import GroupButton from "../../molecules/group-button";
 import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
@@ -23,6 +24,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   type,
 }) => {
   const [step, setStep] = useState<number>(0);
+  const [parcel, setParcel] = useState<number>(1);
   const [busy, setBusy] = useState<boolean>(false);
   return (
     <section className="simulate-loan" id="simulate-loan">
@@ -96,14 +98,14 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                     controlId="email"
                   >
                     <Form.Label>Qual o valor desejado?</Form.Label>
-                    <MoneyField></MoneyField>
+                    <MoneyField />
                   </Form.Group>
                   <Form.Group
                     className="input-field input-field-five sm"
                     controlId="email"
                   >
                     <Form.Label>Em quantas parcelas deseja pagar?</Form.Label>
-                    <MoneyField></MoneyField>
+                    <ParcelField value={parcel} onChangeValue={setParcel} />
                   </Form.Group>
                   <Form.Group
                     className="input-field input-field-six sm"

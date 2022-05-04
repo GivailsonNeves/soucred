@@ -27,6 +27,7 @@ const SimulatorCard: React.FC<SimulatorCardProps> = ({ value }) => {
             <a
               href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/Paginas/default.aspx"
               target="_blank"
+              rel="noreferrer"
             >
               aqui
             </a>
