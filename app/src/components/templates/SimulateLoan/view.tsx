@@ -37,7 +37,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   return (
     <section className="simulate-loan" id="simulate-loan">
       <Container>
-        {step !== 2 && (
+        {step === 0 && (
           <div className="statement">
             <h2>{call}</h2>
             <div>
@@ -46,6 +46,8 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
               <p>√ 30 dias para começar a pagar.</p>
               <p>√ Melhores taxas do mercado.</p>
               <p>√ Dinheiro na conta em até 48h.</p>
+              <br />
+              <br />
             </div>
           </div>
         )}
@@ -66,14 +68,14 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
               <div className="second-tab">
                 <Form className="form-data">
                   <Form.Group
-                    className="input-field input-field-one sm"
+                    className="input-field input-field-one"
                     controlId="name"
                   >
                     <Form.Label>Seu nome:</Form.Label>
                     <Form.Control type="text" />
                   </Form.Group>
                   <Form.Group
-                    className="input-field input-field-two sm"
+                    className="input-field input-field-two"
                     controlId="whatapp"
                   >
                     <Form.Label>Seu WhatsApp:</Form.Label>
@@ -83,58 +85,37 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                       maskPlaceholder="(__) _____-____"
                     />
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-three sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-three">
                     <Form.Label>Seu e-mail:</Form.Label>
                     <Form.Control type="email" />
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-four sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-four">
                     <Form.Label>Qual o valor desejado?</Form.Label>
                     <MoneyField defaultValue={value || 0} />
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-five sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field">
                     <Form.Label>Em quantas parcelas deseja pagar?</Form.Label>
                     <ParcelField value={parcel} onChangeValue={setParcel} />
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-six sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-six">
                     <Form.Label>Comprovante de renda</Form.Label>
                     <label className="file-input">
                       ANEXAR <input type="file" />
                     </label>
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-seven sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-seven">
                     <Form.Label>Comprovante de residência</Form.Label>
                     <label className="file-input">
                       ANEXAR <input type="file" />
                     </label>
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-eight sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-eight">
                     <Form.Label>Comprovante de residência</Form.Label>
                     <label className="file-input">
                       ANEXAR <input type="file" />
                     </label>
                   </Form.Group>
-                  <Form.Group
-                    className="input-field input-field-eight sm"
-                    controlId="email"
-                  >
+                  <Form.Group className="input-field input-field-eight">
                     <Form.Label>
                       Documento de identificação <small>(RG ou CNH)</small>
                     </Form.Label>

@@ -51,23 +51,18 @@ $color: #03ea6d;
       display: none;
     }
     .reactMoneyInputGroupPrepend {
-      position: relative;
-      span {
-        font-family: "Montserrat";
-        background: 0 none;
-        border: 0 none;
-        font-weight: bold;
-        font-size: 1em;
-        left: -20px;
-        top: -15px;
-        position: absolute;
-      }
-      @media screen and (min-width: 678px) {
-        position: initial;
-        span {
-          position: initial;
-        }
-      }
+      display: none;
+    }
+  }
+  .input-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 10px;
+    span {
+      color: black;
+      font-weight: bold;
+      font-size: 38px;
     }
   }
 }

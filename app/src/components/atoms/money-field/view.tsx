@@ -45,11 +45,14 @@ const MoneyField: React.FC<MoneyFieldProps> = ({
         </Button>
       </div>
       {!busy && (
-        <ReactMoneyComponent
-          value={value}
-          config={config}
-          onChange={onChange}
-        />
+        <div className="input-area">
+          <span>R$</span>
+          <ReactMoneyComponent
+            value={value}
+            config={config}
+            onChange={onChange}
+          />
+        </div>
       )}
       <div>
         <Button onClick={() => hdlValue(+200)}>
