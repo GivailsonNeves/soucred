@@ -1,5 +1,8 @@
 .how-works {
   margin-top: -650px;
+  .cellphone {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     margin-top: 50px;
   }
@@ -116,6 +119,18 @@
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .cellphone {
+      display: block;
+      img {
+        width: 80%;
+      }
+    }
+    .container {
+      max-width: 100%;
+      border-radius: 0;
     }
   }
 }

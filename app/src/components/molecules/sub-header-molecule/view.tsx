@@ -19,7 +19,13 @@ const SubHeaderMolecule: React.FC<SubHeaderMoleculeProps> = ({
     <div className="sub-header-molecule">
       <div>
         <h1>{title}</h1>
-        {subTitle && <p>{subTitle}</p>}
+        {subTitle && (
+          <p>
+            <small>{subTitle}</small>
+            <br />
+            <br />
+          </p>
+        )}
         {subTitle2 && <p>{subTitle2}</p>}
         <GreenButton
           target="_blank"

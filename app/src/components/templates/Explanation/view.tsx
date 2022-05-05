@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import person from "../,,/../../../assets/images/Caminho32.png";
 import plus from "../,,/../../../assets/images/Grupo46.png";
 import interrogation from "../,,/../../../assets/images/Grupo_45.png";

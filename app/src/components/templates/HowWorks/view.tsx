@@ -5,21 +5,22 @@ import Titles from "../../molecules/titles/view";
 
 import "./styles.scss";
 
-import identity from "../,,/../../../assets/images/Grupo_6.png";
-import chek from "../,,/../../../assets/images/Grupo_7.png";
-import time from "../,,/../../../assets/images/Grupo_44.png";
-import dolar from "../,,/../../../assets/images/Grupo_11.png";
-import home from "../,,/../../../assets/images/Grupo_12.png";
+import identity from "../../../assets/images/Grupo_6.png";
+import chek from "../../../assets/images/Grupo_7.png";
+import time from "../../../assets/images/Grupo_44.png";
+import dolar from "../../../assets/images/Grupo_11.png";
+import home from "../../../assets/images/Grupo_12.png";
+import celPhone from "../../../assets/images/mockup_mao.png";
+export interface HowWorksProps {}
 
-interface HowWorksProps {
-  showNavigation?: boolean;
-}
-
-function HowWorks({ showNavigation = true }: HowWorksProps) {
+const HowWorks: React.FC = () => {
   const [t] = useTranslation();
 
   return (
     <section className="how-works" id="how-works">
+      <div className="cellphone">
+        <img src={celPhone} alt={t("general.appName")} />
+      </div>
       <Container>
         <div>
           <Titles
@@ -84,6 +85,6 @@ function HowWorks({ showNavigation = true }: HowWorksProps) {
       </Container>
     </section>
   );
-}
+};
 
 export default HowWorks;

@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
+import InputMask from "react-input-mask";
 import celphone from "../,,/../../../assets/images/maopequena.png";
+import { UtilsNavigator } from "../../../utils";
 import MoneyField from "../../atoms/money-field";
 import ParcelField from "../../atoms/parcel-field";
 import GroupButton from "../../molecules/group-button";
-import SignUpMolecule from "../../molecules/sign-up-molecule/view";
-import SimulatorPanel from "../../molecules/simulator-panel";
-import InputMask from "react-input-mask";
+import PersonalSocialSimulator from "../../organisms/personal-social-simulator";
 import "./styles.scss";
-import { UtilsNavigator } from "../../../utils";
 
 export interface SimulateLoanProps {
   type: string;
   call: string;
   subCall?: string;
   taxValue?: number;
-  times?: string;
+  times?: number;
   value?: string;
 }
 
@@ -28,11 +27,10 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   value,
 }) => {
   const [step, setStep] = useState<number>(0);
-  const [parcel, setParcel] = useState<number>(1);
+  const [parcel, setParcel] = useState<number>(times || 1);
   const [busy, setBusy] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log(times, value);
     if (times && value) {
       setStep(1);
     }
@@ -59,25 +57,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
             />
             {step === 0 && (
               <div className="firt-tab">
-                <div className="cardSimulator">
-                  <SimulatorPanel
-                    title="De quanto você precisa?"
-                    taxValue={taxValue || 0}
-                    type={type}
-                  />
-                  <br />
-                </div>
-                <SignUpMolecule
-                  parcelValue="0,00"
-                  onSignup={() => setStep(1)}
-                  value={12}
-                ></SignUpMolecule>
-                {subCall && (
-                  <div
-                    className="base-sub-title"
-                    dangerouslySetInnerHTML={{ __html: subCall }}
-                  />
-                )}
+                <PersonalSocialSimulator type={type} showSwitcher={false} />
               </div>
             )}
 
@@ -114,7 +94,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                     controlId="email"
                   >
                     <Form.Label>Qual o valor desejado?</Form.Label>
-                    <MoneyField />
+                    <MoneyField defaultValue={value || 0} />
                   </Form.Group>
                   <Form.Group
                     className="input-field input-field-five sm"

@@ -5,7 +5,6 @@ import { TypeCredit } from "../../../pages/DoSimulation/view";
 import { UtilsNavigator } from "../../../utils";
 import SignUpMolecule from "../../molecules/sign-up-molecule/view";
 import SimulatorPanel from "../../molecules/simulator-panel";
-
 import "./styles.scss";
 
 const enum CreditType {
@@ -31,10 +30,21 @@ const typeCredits: { [type: string]: TypeCredit } = {
   },
 };
 
-const PersonalSocialSimulator: React.FC = () => {
-  const [creditType, setCreditType] = useState<CreditType>(CreditType.pessoal);
-  const [simulatorValue, setSimulatorValue] = useState<any>("0,00");
-  const [parceltimes, setParceltimes] = useState<number>(60);
+export interface PersonalSocialSimulatorProps {
+  showSwitcher?: boolean;
+  type?: string;
+  value?: string;
+  times?: number;
+}
+const PersonalSocialSimulator: React.FC<PersonalSocialSimulatorProps> = ({
+  showSwitcher = true,
+  type = CreditType.pessoal,
+  value = "0,00",
+  times = 60,
+}) => {
+  const [creditType, setCreditType] = useState<string>(type);
+  const [simulatorValue, setSimulatorValue] = useState<any>(value);
+  const [parceltimes, setParceltimes] = useState<number>(times);
   const history = useHistory();
   const hdlValueChange = (value: any) => {
     setSimulatorValue(value);
@@ -60,20 +70,22 @@ const PersonalSocialSimulator: React.FC = () => {
 
   return (
     <div className="PersonalSocialSimulator">
-      <ButtonGroup>
-        <Button
-          onClick={() => setCreditType(CreditType.pessoal)}
-          className={creditType === CreditType.pessoal ? "active" : ""}
-        >
-          PESSOAL
-        </Button>
-        <Button
-          onClick={() => setCreditType(CreditType.consignado)}
-          className={creditType === CreditType.consignado ? "active" : ""}
-        >
-          CONSIGNADO
-        </Button>
-      </ButtonGroup>
+      {showSwitcher && (
+        <ButtonGroup>
+          <Button
+            onClick={() => setCreditType(CreditType.pessoal)}
+            className={creditType === CreditType.pessoal ? "active" : ""}
+          >
+            PESSOAL
+          </Button>
+          <Button
+            onClick={() => setCreditType(CreditType.consignado)}
+            className={creditType === CreditType.consignado ? "active" : ""}
+          >
+            CONSIGNADO
+          </Button>
+        </ButtonGroup>
+      )}
       <SimulatorPanel
         title="De quanto você precisa?"
         taxValue={currentTax}
@@ -86,7 +98,7 @@ const PersonalSocialSimulator: React.FC = () => {
         value={parceltimes}
         onSignup={() => {
           history.push(
-            `credito/${creditType}/${parceltimes}/${simulatorValue}`
+            `/credito/${creditType}/${parceltimes}/${simulatorValue}`
           );
           UtilsNavigator.gotoTop();
         }}

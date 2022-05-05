@@ -49,6 +49,9 @@ $color: #03ea6d;
     }
     .firt-tab {
       margin-bottom: 50px;
+      .simulator-panel {
+        max-width: 500px;
+      }
     }
 
     .second-tab {

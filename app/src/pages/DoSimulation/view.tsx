@@ -7,7 +7,7 @@ import "./styles.scss";
 
 export interface DoSimulationViewProps {
   type?: string;
-  times?: string;
+  times?: number;
   value?: string;
 }
 
@@ -15,6 +15,7 @@ export interface TypeCredit {
   type: string;
   title: string;
   subTitle?: string;
+  subTitle2?: string;
   call: string;
   subCall?: string;
   taxValue?: number;
@@ -30,9 +31,10 @@ const typeCredits: { [type: string]: TypeCredit } = {
   consignado: {
     type: "consignado",
     title: "Empréstimo Consignado",
-    subTitle: "Empréstimo rápido e seguro?",
+    subTitle: "*Aceitamos negativados.",
+    subTitle2: "Empréstimo rápido e seguro?",
     taxValue: 2.14,
-    call: "Seja para investir pagar dívidas viajar ou para compras de alto valor, nós estamos com você nessa jornada.",
+    call: "Faça uma simulação do valor e aproveite as vantagens",
     subCall:
       "Essas parcelas podem ser ainda melhores.<br/>Envie seus documentos e faça sua simulação personalizada",
   },
@@ -57,11 +59,15 @@ const DoSimulation: React.FC<DoSimulationViewProps> = ({
   times,
   value,
 }) => {
-  const { title, subTitle, ...propsSimulator } = typeCredits[type];
+  const { title, subTitle, subTitle2, ...propsSimulator } = typeCredits[type];
   return (
     <div className="doSimulation">
       <Header offset={0} />
-      <SubHeaderSimulation title={title} subTitle={subTitle} />
+      <SubHeaderSimulation
+        title={title}
+        subTitle={subTitle}
+        subTitle2={subTitle2}
+      />
       <SimulateLoan {...{ ...propsSimulator, times, value }} />
       <Footer />
     </div>
