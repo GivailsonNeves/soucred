@@ -35,8 +35,10 @@ const Solutions: React.FC = () => {
                   middle="Quer antecipar seu saque-aniversário do FGTS?"
                   secondMiddle="Aqui você pode antecipar até 7 anos e receber o dinheiro em até uma hora."
                 ></InfoCard>
-                <p>*Nosso processo mais rápido levou apenas 16 minutos.</p>
-                <p className="last-paragraph">*Aceitamos negativados.</p>
+                <div className="info-box">
+                  <p>*Nosso processo mais rápido levou apenas 16 minutos.</p>
+                  <p className="last-paragraph">*Aceitamos negativados.</p>
+                </div>
               </Col>
               <Col xs={12} md={6}>
                 <InfoCard
@@ -45,7 +47,9 @@ const Solutions: React.FC = () => {
                   miniTitle="(aposentados e pensionistas)"
                   middle="Crédito rápido e superseguro para ambos os lados, descontando a prestação diretamente de seu salário/INSS."
                 ></InfoCard>
-                <p>*Aceitamos negativados.</p>
+                <div className="info-box">
+                  <p>*Aceitamos negativados.</p>
+                </div>
               </Col>
             </Row>
           </Col>

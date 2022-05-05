@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/wp-content/themes/dalazen/static/css/main.27b6aefa.chunk.css",
-    "main.js": "/wp-content/themes/dalazen/static/js/main.a18c96f5.chunk.js",
-    "main.js.map": "/wp-content/themes/dalazen/static/js/main.a18c96f5.chunk.js.map",
+    "main.css": "/wp-content/themes/dalazen/static/css/main.57cb1f04.chunk.css",
+    "main.js": "/wp-content/themes/dalazen/static/js/main.76d7c56e.chunk.js",
+    "main.js.map": "/wp-content/themes/dalazen/static/js/main.76d7c56e.chunk.js.map",
     "runtime-main.js": "/wp-content/themes/dalazen/static/js/runtime-main.8cda8d12.js",
     "runtime-main.js.map": "/wp-content/themes/dalazen/static/js/runtime-main.8cda8d12.js.map",
     "static/css/2.eff63748.chunk.css": "/wp-content/themes/dalazen/static/css/2.eff63748.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.71d22a8f.chunk.js.map": "/wp-content/themes/dalazen/static/js/3.71d22a8f.chunk.js.map",
     "index.html": "/wp-content/themes/dalazen/index.html",
     "static/css/2.eff63748.chunk.css.map": "/wp-content/themes/dalazen/static/css/2.eff63748.chunk.css.map",
-    "static/css/main.27b6aefa.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.27b6aefa.chunk.css.map",
+    "static/css/main.57cb1f04.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.57cb1f04.chunk.css.map",
     "static/js/2.4f12330d.chunk.js.LICENSE.txt": "/wp-content/themes/dalazen/static/js/2.4f12330d.chunk.js.LICENSE.txt",
     "static/media/Grupo_11.2f588b43.png": "/wp-content/themes/dalazen/static/media/Grupo_11.2f588b43.png",
     "static/media/Grupo_12.b8deb124.png": "/wp-content/themes/dalazen/static/media/Grupo_12.b8deb124.png",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.8cda8d12.js",
     "static/css/2.eff63748.chunk.css",
     "static/js/2.4f12330d.chunk.js",
-    "static/css/main.27b6aefa.chunk.css",
-    "static/js/main.a18c96f5.chunk.js"
+    "static/css/main.57cb1f04.chunk.css",
+    "static/js/main.76d7c56e.chunk.js"
   ]
 }

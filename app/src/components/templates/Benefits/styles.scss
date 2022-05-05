@@ -1,7 +1,7 @@
 .benefits {
   max-width: 1386px;
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: -60px;
   position: relative;
   background-color: #03ea6d;
   box-shadow: 10px -20px 40px #00000034;
@@ -31,5 +31,8 @@
         grid-template-columns: auto auto auto auto auto;
       }
     }
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: -20px;
   }
 }

@@ -34,7 +34,7 @@ const typeCredits: { [type: string]: TypeCredit } = {
     taxValue: 2.14,
     call: "Seja para investir pagar dívidas viajar ou para compras de alto valor, nós estamos com você nessa jornada.",
     subCall:
-      "essas parcelas podem ser ainda melhores.<br/>Envie seus documentos e faça sua simulação personalizada",
+      "Essas parcelas podem ser ainda melhores.<br/>Envie seus documentos e faça sua simulação personalizada",
   },
   financiamento: {
     type: "financiamento",
@@ -52,13 +52,17 @@ const typeCredits: { [type: string]: TypeCredit } = {
   },
 };
 
-const DoSimulation: React.FC<DoSimulationViewProps> = ({ type = "nenhum" }) => {
+const DoSimulation: React.FC<DoSimulationViewProps> = ({
+  type = "nenhum",
+  times,
+  value,
+}) => {
   const { title, subTitle, ...propsSimulator } = typeCredits[type];
   return (
     <div className="doSimulation">
       <Header offset={0} />
       <SubHeaderSimulation title={title} subTitle={subTitle} />
-      <SimulateLoan {...propsSimulator} />
+      <SimulateLoan {...{ ...propsSimulator, times, value }} />
       <Footer />
     </div>
   );

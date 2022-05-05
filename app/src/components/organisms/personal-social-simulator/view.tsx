@@ -77,7 +77,7 @@ const PersonalSocialSimulator: React.FC = () => {
       <SimulatorPanel
         title="De quanto você precisa?"
         taxValue={currentTax}
-        type="pessoal"
+        type={creditType}
         onValueChange={hdlValueChange}
       />
       <SignUpMolecule

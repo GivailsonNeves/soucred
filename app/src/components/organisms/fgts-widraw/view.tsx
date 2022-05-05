@@ -89,7 +89,14 @@ const FgtsWidraw: React.FC<FgtsWidrawProps> = () => {
         {step >= 2 && <p>Refazer simulação</p>}
       </div>
       <p className="sub-title" style={{ paddingTop: 20 }}>
-        *Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa aqui.
+        *Não sabe o valor do seu FGTS? Acesse o aplicativo da Caixa{" "}
+        <a
+          href="https://www.caixa.gov.br/atendimento/aplicativos/fgts/Paginas/default.aspx#video"
+          target="_blank"
+        >
+          aqui
+        </a>
+        .
       </p>
     </>
   );

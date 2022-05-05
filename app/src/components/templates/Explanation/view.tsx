@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import person from "../,,/../../../assets/images/Caminho32.png";
 import plus from "../,,/../../../assets/images/Grupo46.png";
 import interrogation from "../,,/../../../assets/images/Grupo_45.png";
@@ -47,7 +47,7 @@ function Explanation({ showNavigation = true }: ExplanationProps) {
             picture={plus}
             title="Quais as vantagens do saque-aniversário?"
           />
-          <h4>• Taxas a partir de 1,69%/mês. </h4>
+          <h4>• Taxas a partir de 1,69% a.m.</h4>
           <h3>Valores competitivos no mercado. </h3>
 
           <h4>• Sem valor mínimo para saque. </h4>
@@ -64,14 +64,18 @@ function Explanation({ showNavigation = true }: ExplanationProps) {
         </div>
 
         <div className="explanation-footer">
-          <div>
-            <img src={celphone} alt="telefone" />
-            <GreenButton
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
-            >
-              CHAMA NO ZAP
-            </GreenButton>
+          <div className="chama">
+            <div>
+              <img src={celphone} alt="telefone" />
+            </div>
+            <div>
+              <GreenButton
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=+5561996517829&text=Olá!"
+              >
+                CHAMA NO ZAP
+              </GreenButton>
+            </div>
           </div>
         </div>
       </Container>

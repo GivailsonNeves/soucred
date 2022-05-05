@@ -26,6 +26,7 @@ const Simulators: React.FC = () => {
               blackText="Quer simular as parcelas de um empréstimo pessoal ou consignado?"
               subTitleText="Envie seus documentos para análise e a gente te retorna rapidinho via WhatsApp."
             />
+            <br />
           </Col>
           <Col>
             <PersonalSocialSimulator />

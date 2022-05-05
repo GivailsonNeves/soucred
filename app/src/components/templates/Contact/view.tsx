@@ -138,7 +138,8 @@ const Contact: React.FC<ContactProps> = ({ sendSubscribe, contactData }) => {
                               setFieldValue("phone", e.target.value)
                             }
                             placeholder={t("contact.placeHolderPhone")}
-                            mask="(99) 9999-9999"
+                            mask="(99) 99999-9999"
+                            maskPlaceholder="(__) _____-____"
                           />
                         )}
                       </Field>

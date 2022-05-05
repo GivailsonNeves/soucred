@@ -18,8 +18,8 @@ $color: #03ea6d;
       flex-direction: column;
       margin-top: 50px;
       h2 {
-        font-family: "Montserrat";
-        // font-style: italic;
+        font-family: "Exo";
+        font-style: italic;
         font-weight: bold;
         text-align: left;
         margin-bottom: 30px;
@@ -37,13 +37,13 @@ $color: #03ea6d;
       @media screen and (min-width: 992px) {
         div {
           margin-left: 30px;
+          p {
+            text-align: left;
+          }
         }
         flex-direction: row;
         h2 {
           max-width: 450px;
-        }
-        p {
-          text-align: left;
         }
       }
     }
@@ -112,7 +112,7 @@ $color: #03ea6d;
             margin-bottom: 0 !important;
 
             margin-right: 20px;
-            font-size: 2em;
+            font-size: 1.4em;
             font-family: "Montserrat";
             color: #283950;
           }
@@ -120,14 +120,15 @@ $color: #03ea6d;
             flex-direction: row;
             align-items: flex-end;
             .form-label {
-              max-width: 50%;
+              max-width: 60%;
+              white-space: nowrap;
             }
             .file-input {
               margin-top: 0;
             }
             .money-field {
-              max-width: 100%;
               margin-top: 0;
+              max-width: 50%;
             }
           }
         }
@@ -135,7 +136,7 @@ $color: #03ea6d;
         input {
           text-align: center;
           background-color: rgba(127, 17, 224, 0);
-          font-size: 2em;
+          font-size: 1em;
           font-family: "Montserrat";
           border: none;
           text-align: left;
@@ -152,7 +153,10 @@ $color: #03ea6d;
             margin: 50px auto;
             background: white;
             width: 288px;
-            height: 46px;
+            font-size: 22px;
+            line-height: 22px;
+            padding: 10px 0;
+            font-weight: bold;
             border: 2px solid #ffffff;
             border-radius: 28px;
             color: #283950;

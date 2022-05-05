@@ -39,11 +39,6 @@ $color: #03ea6d;
       height: 69px;
       font-size: 69px;
       line-height: 69px;
-      position: relative;
-      span {
-        position: absolute;
-        top: -5px;
-      }
     }
     input {
       min-width: 240px;
@@ -56,12 +51,22 @@ $color: #03ea6d;
       display: none;
     }
     .reactMoneyInputGroupPrepend {
+      position: relative;
       span {
         font-family: "Montserrat";
         background: 0 none;
         border: 0 none;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1em;
+        left: -20px;
+        top: -15px;
+        position: absolute;
+      }
+      @media screen and (min-width: 678px) {
+        position: initial;
+        span {
+          position: initial;
+        }
       }
     }
   }

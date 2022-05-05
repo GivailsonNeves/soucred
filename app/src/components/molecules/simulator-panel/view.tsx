@@ -16,6 +16,7 @@ const SimulatorPanel: React.FC<SimulatorPanelProps> = ({
   title,
   taxValue,
   defaultValue,
+  type,
   onValueChange,
 }) => {
   const [t] = useTranslation();
@@ -23,12 +24,16 @@ const SimulatorPanel: React.FC<SimulatorPanelProps> = ({
     <div className="simulator-panel">
       <h3>{title}</h3>
       <MoneyField defaultValue={defaultValue} onChangeValue={onValueChange} />
-      <p>
-        {t("simulator.tax-text").replace(
-          "{tax-value}",
-          taxValue.toString().replace(".", ",")
-        )}
-      </p>
+      {type !== "pessoal" ? (
+        <p>
+          {t("simulator.tax-text").replace(
+            "{tax-value}",
+            taxValue.toString().replace(".", ",")
+          )}
+        </p>
+      ) : (
+        <p>&nbsp;</p>
+      )}
     </div>
   );
 };

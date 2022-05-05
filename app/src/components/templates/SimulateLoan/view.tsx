@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import celphone from "../,,/../../../assets/images/maopequena.png";
 import MoneyField from "../../atoms/money-field";
@@ -15,6 +15,8 @@ export interface SimulateLoanProps {
   call: string;
   subCall?: string;
   taxValue?: number;
+  times?: string;
+  value?: string;
 }
 
 const SimulateLoan: React.FC<SimulateLoanProps> = ({
@@ -22,10 +24,19 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   taxValue,
   subCall,
   type,
+  times,
+  value,
 }) => {
   const [step, setStep] = useState<number>(0);
   const [parcel, setParcel] = useState<number>(1);
   const [busy, setBusy] = useState<boolean>(false);
+
+  useEffect(() => {
+    console.log(times, value);
+    if (times && value) {
+      setStep(1);
+    }
+  }, [times, value]);
   return (
     <section className="simulate-loan" id="simulate-loan">
       <Container>
@@ -54,6 +65,7 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                     taxValue={taxValue || 0}
                     type={type}
                   />
+                  <br />
                 </div>
                 <SignUpMolecule
                   parcelValue="0,00"
@@ -84,7 +96,11 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                     controlId="whatapp"
                   >
                     <Form.Label>Seu WhatsApp:</Form.Label>
-                    <InputMask className="whatsapp-number" mask="99999-9999" />
+                    <InputMask
+                      className="whatsapp-number"
+                      mask="(99) 99999-9999"
+                      maskPlaceholder="(__) _____-____"
+                    />
                   </Form.Group>
                   <Form.Group
                     className="input-field input-field-three sm"

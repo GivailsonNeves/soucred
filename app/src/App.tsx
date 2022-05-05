@@ -41,10 +41,10 @@ const App: React.FC<AppProps> = ({ initAll }) => {
         <Route exact path="/saque-fgts/:value">
           <LootFgts />
         </Route>
-        <Route path="/credito/:type">
+        <Route exact path="/credito/:type">
           <DoSimulation />
         </Route>
-        <Route path="/credito/:type/:times/:value">
+        <Route exact path="/credito/:type/:times/:value">
           <DoSimulation />
         </Route>
         <Route exact path="/blog">
