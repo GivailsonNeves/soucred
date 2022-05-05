@@ -16,8 +16,8 @@
     border: none;
     align-items: center;
     p:first-child {
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
       border: 2px solid #03ea6d;
       border-radius: 50%;
       display: flex;
@@ -25,6 +25,17 @@
       align-items: center;
       align-content: flex-start;
       margin: auto 10px;
+      font-size: 0.8em;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    @media screen and (min-width: 500px) {
+      p:first-child {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
   .button:not(:hover) {
@@ -43,15 +54,22 @@
     border: none;
     align-items: center;
     p:first-child {
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
       border: 2px solid #03ea6d;
       border-radius: 50%;
       display: flex;
       justify-content: space-around;
       align-items: center;
       align-content: flex-start;
-      margin: auto 10px;
+      margin: auto;
+    }
+
+    @media screen and (min-width: 500px) {
+      p:first-child {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }

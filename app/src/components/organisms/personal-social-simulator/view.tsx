@@ -38,7 +38,7 @@ export interface PersonalSocialSimulatorProps {
 }
 const PersonalSocialSimulator: React.FC<PersonalSocialSimulatorProps> = ({
   showSwitcher = true,
-  type = CreditType.pessoal,
+  type = CreditType.consignado,
   value = "0,00",
   times = 60,
 }) => {

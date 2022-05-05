@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import InputMask from "react-input-mask";
 import celphone from "../,,/../../../assets/images/maopequena.png";
-import { UtilsNavigator } from "../../../utils";
 import MoneyField from "../../atoms/money-field";
 import ParcelField from "../../atoms/parcel-field";
 import GroupButton from "../../molecules/group-button";
@@ -38,16 +37,18 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
   return (
     <section className="simulate-loan" id="simulate-loan">
       <Container>
-        <div className="statement">
-          <h2>{call}</h2>
-          <div>
-            <p>√ Pague em até 80x no boleto.</p>
-            <p>√ Sem valor mínimo das parcelas.</p>
-            <p>√ 30 dias para começar a pagar.</p>
-            <p>√ Melhores taxas do mercado.</p>
-            <p>√ Dinheiro na conta em até 48h.</p>
+        {step !== 2 && (
+          <div className="statement">
+            <h2>{call}</h2>
+            <div>
+              <p>√ Pague em até 80x no boleto.</p>
+              <p>√ Sem valor mínimo das parcelas.</p>
+              <p>√ 30 dias para começar a pagar.</p>
+              <p>√ Melhores taxas do mercado.</p>
+              <p>√ Dinheiro na conta em até 48h.</p>
+            </div>
           </div>
-        </div>
+        )}
 
         {type !== "financiamento" && (
           <>
@@ -151,7 +152,6 @@ const SimulateLoan: React.FC<SimulateLoanProps> = ({
                         setTimeout(() => {
                           setBusy(false);
                           setStep(2);
-                          UtilsNavigator.gotoTop();
                         }, 2000);
                       }}
                     >

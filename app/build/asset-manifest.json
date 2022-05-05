@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wp-content/themes/dalazen/static/css/main.4ddbc486.chunk.css",
-    "main.js": "/wp-content/themes/dalazen/static/js/main.16b9ce8b.chunk.js",
-    "main.js.map": "/wp-content/themes/dalazen/static/js/main.16b9ce8b.chunk.js.map",
+    "main.css": "/wp-content/themes/dalazen/static/css/main.5925bb1c.chunk.css",
+    "main.js": "/wp-content/themes/dalazen/static/js/main.8d0fe99d.chunk.js",
+    "main.js.map": "/wp-content/themes/dalazen/static/js/main.8d0fe99d.chunk.js.map",
     "runtime-main.js": "/wp-content/themes/dalazen/static/js/runtime-main.8cda8d12.js",
     "runtime-main.js.map": "/wp-content/themes/dalazen/static/js/runtime-main.8cda8d12.js.map",
     "static/css/2.eff63748.chunk.css": "/wp-content/themes/dalazen/static/css/2.eff63748.chunk.css",
-    "static/js/2.0bff3067.chunk.js": "/wp-content/themes/dalazen/static/js/2.0bff3067.chunk.js",
-    "static/js/2.0bff3067.chunk.js.map": "/wp-content/themes/dalazen/static/js/2.0bff3067.chunk.js.map",
+    "static/js/2.7dabc707.chunk.js": "/wp-content/themes/dalazen/static/js/2.7dabc707.chunk.js",
+    "static/js/2.7dabc707.chunk.js.map": "/wp-content/themes/dalazen/static/js/2.7dabc707.chunk.js.map",
     "static/js/3.71d22a8f.chunk.js": "/wp-content/themes/dalazen/static/js/3.71d22a8f.chunk.js",
     "static/js/3.71d22a8f.chunk.js.map": "/wp-content/themes/dalazen/static/js/3.71d22a8f.chunk.js.map",
     "index.html": "/wp-content/themes/dalazen/index.html",
     "static/css/2.eff63748.chunk.css.map": "/wp-content/themes/dalazen/static/css/2.eff63748.chunk.css.map",
-    "static/css/main.4ddbc486.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.4ddbc486.chunk.css.map",
-    "static/js/2.0bff3067.chunk.js.LICENSE.txt": "/wp-content/themes/dalazen/static/js/2.0bff3067.chunk.js.LICENSE.txt",
+    "static/css/main.5925bb1c.chunk.css.map": "/wp-content/themes/dalazen/static/css/main.5925bb1c.chunk.css.map",
+    "static/js/2.7dabc707.chunk.js.LICENSE.txt": "/wp-content/themes/dalazen/static/js/2.7dabc707.chunk.js.LICENSE.txt",
     "static/media/Grupo_11.2f588b43.png": "/wp-content/themes/dalazen/static/media/Grupo_11.2f588b43.png",
     "static/media/Grupo_12.b8deb124.png": "/wp-content/themes/dalazen/static/media/Grupo_12.b8deb124.png",
     "static/media/Grupo_6.edc5ef3a.png": "/wp-content/themes/dalazen/static/media/Grupo_6.edc5ef3a.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.8cda8d12.js",
     "static/css/2.eff63748.chunk.css",
-    "static/js/2.0bff3067.chunk.js",
-    "static/css/main.4ddbc486.chunk.css",
-    "static/js/main.16b9ce8b.chunk.js"
+    "static/js/2.7dabc707.chunk.js",
+    "static/css/main.5925bb1c.chunk.css",
+    "static/js/main.8d0fe99d.chunk.js"
   ]
 }

@@ -31,7 +31,6 @@ $color: #03ea6d;
           font-weight: bold;
           font-size: 1.3em;
           margin: 0;
-          text-align: center;
         }
       }
       @media screen and (min-width: 992px) {
@@ -57,11 +56,15 @@ $color: #03ea6d;
     .second-tab {
       margin-bottom: 50px;
       .form-data {
-        padding: 97px 97px 30px 97px;
-        margin-top: 110px;
+        padding: 30px;
+        margin-top: 30px;
         background: #03ea6d 0% 0% no-repeat padding-box;
         box-shadow: 10px 20px 40px #00000034;
         border-radius: 22px;
+        @media screen and (min-width: 674px) {
+          margin-top: 110px;
+          padding: 97px 97px 30px 97px;
+        }
         button {
           background: transparent;
           border: 2px solid #ffffff;

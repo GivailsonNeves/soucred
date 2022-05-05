@@ -20,4 +20,8 @@ $color: #03ea6d;
     border: 0 none;
     background-color: darken($color, 10%);
   }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten($color, 10%);
+  }
 }
